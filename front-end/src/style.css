@@ -1,0 +1,153 @@
+@font-face {
+font-family: 'Cooper Black';
+    src: url('../src/assets/COOPBL.TTF') ;
+}
+
+@font-face {
+    font-family: 'Kurale';
+    src: url('../src/assets/Kurale-Regular.ttf') ;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../src/assets/Montserrat-Italic-VariableFont_wght.ttf')  ;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.left-pane,
+.right-pane {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-pane {
+    background-image: url('../public/img/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo-left-pane{
+    width: 426.58px;
+    height: 354.73px;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-repeat: no-repeat;
+    background-image: url('../public/img/logo.png');
+}
+
+
+.right-pane{
+    justify-content: space-between;
+}
+
+
+.top-right,
+.bottom-right{
+    width: 100%;
+}
+
+.top-right {
+    height: 30%;
+    border-bottom: 2px solid black;
+}
+
+.bottom-right {
+    height: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+
+
+label {
+    margin-right: 5px;
+}
+
+#password,#name,#email{
+    border-radius:50.35px;
+    padding: 5px;
+    border: none;
+    background-color: rgba(195, 224, 180, 1);
+    color: black;
+    width: 571.49px;
+    height: 79px;
+    outline: none;
+}
+
+
+
+.Name,.Password,.Email{
+    font-size: 21px;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+.logo-text{
+    font-size: 70px;
+    color: rgba(69, 89, 11, 1);
+    margin-top: 290px;
+    font-family: 'Cooper Black', sans-serif;
+
+}
+
+.logo-text2{
+    font-size: 40px;
+    color: rgba(134, 161, 53, 1);
+    font-family: "Kurale", serif;
+}
+
+
+.Create-Account-button{
+    margin-top: 20px;
+    width: 429.65px;
+    height: 76.82px;
+    background-color:  rgba(69, 89, 11, 1);
+    color: #fff;
+    border: none;
+    border-radius: 50.35px;
+    font-size: 26.18px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+
