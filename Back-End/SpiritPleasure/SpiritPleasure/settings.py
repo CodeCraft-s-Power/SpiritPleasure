@@ -32,7 +32,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'place',
     'authentication',
-    'rest_framework.authtoken',
+    'crispy_forms',
+    'crispy_bootstrap5',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -43,6 +44,10 @@ INSTALLED_APPS = [
 
     'django_filters',
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -77,27 +82,27 @@ WSGI_APPLICATION = 'SpiritPleasure.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SpiritPleasure',
-        'USER': 'backendmanager',
-        'PASSWORD': 'sleep-eat-code-repeat',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'default-character-set': 'utf8',
-    },
-    "OPTIONS": {
-        "init_command": "SET default_storage_engine=INNODB",
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'SpiritPleasure',
+#         'USER': 'backendmanager',
+#         'PASSWORD': 'sleep-eat-code-repeat',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'default-character-set': 'utf8',
+#     },
+#     "OPTIONS": {
+#         "init_command": "SET default_storage_engine=INNODB",
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -144,3 +149,6 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.BrowsableAPIRenderer',
     ]
 }
+
+LOGIN_REDIRECT_URL = '/home'
+LOGOUT_REDIRECT_URL = '/login'
