@@ -5,7 +5,7 @@ from place.views import PlaceViewSet
 
 
 router = DefaultRouter()
-router.register(r'travel-places', PlaceViewSet)
+router.register(r'places', PlaceViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
