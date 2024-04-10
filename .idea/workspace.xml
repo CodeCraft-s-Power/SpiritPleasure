@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="MySQL_Con" />
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="fix: modified auth/register">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_49_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_49__Changes_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_55_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_55__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/db.sqlite3" afterDir="false" />
+    </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,10 +26,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="JSX File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
-        <option value="JSX File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -43,6 +56,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -57,22 +73,35 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;JavaScript Debug.SpiritPleasure.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.UserIntegrationTest.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/All files/SpiritPleasure&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/WebstormProjects/SpiritPleasure/front-end/public/img&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure\front-end\public\img" />
+      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure\front-end\public" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\All files\SpiritPleasure" />
+      <recent name="C:\All files\SpiritPleasure\Front-End" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.SpiritPleasure">
     <configuration name="SpiritPleasure" type="JavascriptDebugType" uri="http://localhost:3000/index.html">
       <method v="2" />
@@ -116,6 +145,16 @@
       <workItem from="1711721410097" duration="1521000" />
       <workItem from="1711805648045" duration="5479000" />
       <workItem from="1711889736008" duration="4590000" />
+      <workItem from="1711901298689" duration="149000" />
+      <workItem from="1711979228329" duration="4414000" />
+      <workItem from="1711999720573" duration="4647000" />
+      <workItem from="1712006223317" duration="1970000" />
+      <workItem from="1712008229891" duration="297000" />
+      <workItem from="1712405169381" duration="6595000" />
+      <workItem from="1712415218653" duration="860000" />
+      <workItem from="1712491084316" duration="2989000" />
+      <workItem from="1712494530401" duration="1812000" />
+      <workItem from="1712520345199" duration="3082000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -133,65 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1711722291913</updated>
     </task>
-    <task id="LOCAL-00003" summary="tryDB">
+    <task id="LOCAL-00003" summary="fix: modified auth/register">
       <option name="closed" value="true" />
-      <created>1712064329300</created>
+      <created>1712495421526</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1712064329300</updated>
+      <updated>1712495421526</updated>
     </task>
-    <task id="LOCAL-00004" summary="tryDB">
-      <option name="closed" value="true" />
-      <created>1712075838223</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1712075838224</updated>
-    </task>
-    <task id="LOCAL-00005" summary="MySQL_Con">
-      <option name="closed" value="true" />
-      <created>1712075875954</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1712075875954</updated>
-    </task>
-    <task id="LOCAL-00006" summary="MySQL_Con">
-      <option name="closed" value="true" />
-      <created>1712076104287</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1712076104287</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/main" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="origin/Dev" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -202,17 +197,6 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="origin/main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
             </State>
           </value>
         </entry>
@@ -221,8 +205,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created" />
-    <MESSAGE value="tryDB" />
-    <MESSAGE value="MySQL_Con" />
-    <option name="LAST_COMMIT_MESSAGE" value="MySQL_Con" />
+    <MESSAGE value="fix: modified auth/register" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: modified auth/register" />
   </component>
 </project>
