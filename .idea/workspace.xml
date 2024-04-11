@@ -4,26 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment=" feat:theme button1">
-      <change afterPath="$PROJECT_DIR$/front-end/src/Home-Components/BottomNavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/Home-Components/BottonNavBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/Home-Components/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/Home-Components/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/Home-Components/TopNavBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/Home-Components/TopNavBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/Registration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/img/background2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/img/login.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_16_08_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_04_2024_16_08__Changes_.xml" beforeDir="false" />
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="home page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/registration/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/registration/sign_up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/admin.py" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,14 +51,12 @@
     &quot;assignee&quot;: &quot;RomanRavlyk&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="e4244030-9c03-4917-87d7-7db593f315a0" />
-        <option name="url" value="https://github.com/CodeCraft-s-Power/SpiritPleasure" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CodeCraft-s-Power/SpiritPleasure.git",
+    "accountId": "7985b7fd-892f-4676-aa12-6bb50f3fb4a7"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -204,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712784875302</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="home page">
+      <option name="closed" value="true" />
+      <created>1712861760097</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712861760097</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +231,7 @@
     <MESSAGE value="Created" />
     <MESSAGE value="fix: modified auth/register" />
     <MESSAGE value=" feat:theme button1" />
-    <option name="LAST_COMMIT_MESSAGE" value=" feat:theme button1" />
+    <MESSAGE value="home page" />
+    <option name="LAST_COMMIT_MESSAGE" value="home page" />
   </component>
 </project>
