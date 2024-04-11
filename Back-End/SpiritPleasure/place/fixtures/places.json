@@ -1,0 +1,29 @@
+[
+  {
+    "model": "place.place",
+    "pk": 1,
+    "fields": {
+      "name": "testPlace",
+      "description": "test1",
+      "location": "Lviv"
+    }
+  },
+  {
+    "model": "place.place",
+    "pk": 2,
+    "fields": {
+      "name": "anotherPlace",
+      "description": "test2",
+      "location": "Kyiv"
+    }
+  },
+  {
+    "model": "place.place",
+    "pk": 3,
+    "fields": {
+      "name": "Place",
+      "description": "Interesting",
+      "location": "Rivne"
+    }
+  }
+]
