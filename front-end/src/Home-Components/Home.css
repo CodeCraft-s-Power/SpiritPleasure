@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/background2.png');
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Встановлює висоту фону як 100% висоти вікна браузера */
+}
