@@ -304,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712777266652</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testForUser1">
+      <option name="closed" value="true" />
+      <created>1712859069244</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712859069244</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +378,8 @@
     <MESSAGE value="fixtures0" />
     <MESSAGE value="try_tests" />
     <MESSAGE value="tryToMakePlace" />
-    <option name="LAST_COMMIT_MESSAGE" value="tryToMakePlace" />
+    <MESSAGE value="testForUser1" />
+    <option name="LAST_COMMIT_MESSAGE" value="testForUser1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />
