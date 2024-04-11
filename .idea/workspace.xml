@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="tryToMakePlace">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_49__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_49__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2024_19_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2024_19_02__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +51,7 @@
     </excluded-from-favorite>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Dev" />
+        <entry key="$PROJECT_DIR$" value="forPulls" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -167,6 +177,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
+        <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
+        <item itemvalue="Python.tests" />
         <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
         <item itemvalue="Python.tests" />
       </list>

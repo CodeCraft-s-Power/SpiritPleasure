@@ -1,32 +1,55 @@
-from rest_framework.decorators import api_view
+from rest_framework.views import APIView
+from .serializers import TokenSerializer
+from rest_framework.authtoken.models import Token
+from rest_framework import viewsets
 from rest_framework.response import Response
 from rest_framework import status
-from .serializers import UserRegisterSerializer
-from rest_framework.authtoken.models import Token
+from django.contrib.auth import authenticate
+from django.contrib.auth import logout
+from django.contrib.auth.models import User
 
-@api_view(['POST',])
-def logout_user(request):
-    if request.method == "POST":
-        request.user.auth_token.delete()
-        return Response({"message": "You are logged out"}, status=status.HTTP_200_OK)
+class LoginView(APIView):
+    def post(self, request, *args, **kwargs):
+        username = request.data['username']
+        password = request.data['password']
 
-@api_view(['POST',])
-def user_register_view(request):
-    if request.method == "POST":
-        serializer = UserRegisterSerializer(data=request.data)
-
-        data = {}
-
-        if serializer.is_valid():
-            account = serializer.save()
-
-            data['response'] = 'Account has been created'
-            data['username'] = account.username
-            data['email'] = account.email
-
-            # Create token for the newly registered user
-            token = Token.objects.create(user=account)
-            data['token'] = token.key
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            # Check if token already exists
+            token, _ = Token.objects.get_or_create(user=user)
+            serializer = TokenSerializer(data={'token': token.key})
+            serializer.is_valid()
+            return Response(serializer.data, status=status.HTTP_200_OK)
         else:
-            data = serializer.errors
-        return Response(data)
+            return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
+
+
+class RegisterView(viewsets.ViewSet):
+    def create(self, request, *args, **kwargs):
+        username = request.data['username']
+        email = request.data.get('email', '')  # Email is optional
+        password = request.data['password']
+
+        try:
+            user = User.objects.create_user(username, email, password)
+            user.save()
+            return Response({'success': 'User registered successfully'}, status=status.HTTP_201_CREATED)
+        except:
+            return Response({'error': 'Registration failed'}, status=status.HTTP_400_BAD_REQUEST)
+    def post(self, request, *args, **kwargs):
+        username = request.data['username']
+        email = request.data.get('email', '')  # Email is optional
+        password = request.data['password']
+
+        try:
+            user = User.objects.create_user(username, email, password)
+            user.save()
+            return Response({'success': 'User registered successfully'}, status=status.HTTP_201_CREATED)
+        except:
+            return Response({'error': 'Registration failed'}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class LogoutView(APIView):
+    def get(self, request, *args, **kwargs):
+        logout(request)
+        return Response({'success': 'Logged out successfully'}, status=status.HTTP_200_OK)

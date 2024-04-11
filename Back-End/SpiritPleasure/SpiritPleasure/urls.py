@@ -9,6 +9,7 @@ router.register(r'places', PlaceViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('authentication.urls')),
-    path('api/', include(router.urls)),
+    path('', include('authentication.urls')),
+    path('', include('django.contrib.auth.urls')),
+    path('', include(router.urls)),
 ]

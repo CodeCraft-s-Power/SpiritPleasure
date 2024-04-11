@@ -1,26 +1,44 @@
-from .serializers import UserRegisterSerializer
-from django.test import TestCase
 from django.contrib.auth.models import User
-from rest_framework.authtoken.models import Token
+from rest_framework.test import APITestCase
+from rest_framework import status
 
-class UserRegisterSerializerTestCase(TestCase):
-    def test_user_creation(self):
+
+class AuthenticationTests(APITestCase):
+    def test_login(self):
         user_data = {
             'username': 'testuser',
             'email': 'test@example.com',
-            'password': 'password',
-            'password2': 'password',
+            'password': 'testpassword'
         }
+        User.objects.create_user(**user_data)
 
-        serializer = UserRegisterSerializer(data=user_data)
-        self.assertTrue(serializer.is_valid())
+        response = self.client.post('/login/', data=user_data)
 
-        user = serializer.save()
-        self.assertIsInstance(user, User)
-        self.assertEqual(user.username, 'testuser')
-        self.assertEqual(user.email, 'test@example.com')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertTrue('token' in response.data)
 
-class CreateAuthTokenTestCase(TestCase):
-    def test_auth_token_creation(self):
-        user = User.objects.create_user(username='testuser', email='test@example.com', password='password')
-        self.assertTrue(Token.objects.filter(user=user).exists())
+    def test_register(self):
+        new_user_data = {
+            'username': 'newuser',
+            'email': 'newuser@example.com',
+            'password': 'newpassword'
+        }
+        response = self.client.post('/register/', data=new_user_data)
+
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertTrue('success' in response.data)
+
+    def test_logout(self):
+        user_data = {
+            'username': 'testuser',
+            'email': 'test@example.com',
+            'password': 'testpassword'
+        }
+        user = User.objects.create_user(**user_data)
+
+        self.client.force_authenticate(user=user)
+
+        response = self.client.get('/logout/')
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertTrue('success' in response.data)

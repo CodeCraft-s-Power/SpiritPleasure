@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'rest_framework',
     'place',
-    'authentication',
+    'authentication.apps.AuthenticationConfig',
     'rest_framework.authtoken',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -43,6 +43,10 @@ INSTALLED_APPS = [
 
     'django_filters',
 ]
+
+LOGIN_REDIRECT_URL = '/home'
+LOGOUT_REDIRECT_URL = '/login'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
