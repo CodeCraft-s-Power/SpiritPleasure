@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="fix: modified auth/register">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_49_[Changes]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_49__Changes_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_55_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_55__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2024_10_40_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2024_10_40_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/templates/authentication/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/db.sqlite3" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
@@ -79,7 +73,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/WebstormProjects/SpiritPleasure/front-end/public/img&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
