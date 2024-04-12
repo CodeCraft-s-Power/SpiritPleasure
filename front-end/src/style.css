@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: 'Cooper Black';
   src: url('../src/assets/COOPBL.TTF') ;
@@ -39,7 +40,7 @@
 }
 
 .left-pane {
-  background-image: url('img/background (1).png');
+  background-image: url('../src/img/background (1).png');
   background-size: cover;
   background-position: center;
 }
@@ -55,7 +56,7 @@
   left: 25%;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
-  background-image: url('img/logo (1).png');
+  background-image: url('../src/img/logo (1).png');
 }
 
 
@@ -109,7 +110,7 @@ label {
   background-color: rgba(195, 224, 180, 1);
   color:rgba(0, 0, 0, 0.5);
   width: 571.49px;
-  height: 79px;
+  height: 60px;
   outline: none;
 }
 
@@ -139,8 +140,8 @@ label {
 
 .Create-Account-button{
   margin-top: 20px;
-  width: 429.65px;
-  height: 76.82px;
+  width: 350px;
+  height: 55px;
   background-color:  rgba(69, 89, 11, 1);
   color: #fff;
   border: none;
@@ -156,7 +157,6 @@ label {
   color: #fff;
   border: none;
   border-radius: 50px;
-  padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   outline: none;
@@ -170,12 +170,15 @@ label {
 
 
 .theme-button-container {
+  float: right;
   margin-right: 20px;
+  margin-top: 17px;
+  margin-left: 1818px;
 }
 
 
 .dark-theme .left-pane {
-  background-image: url('img/fon.png'); /* Фотографія для темної теми */
+  background-image: url('../src/img/fon.png'); /* Фотографія для темної теми */
 }
 
 .dark-theme .logo-text{
@@ -206,6 +209,7 @@ label {
 
 .slider {
   margin-top: 5px;
+  margin-left: 5px;
   position: relative;
   display: inline-block;
   width: 50px;
@@ -255,17 +259,16 @@ input[type="checkbox"]:checked + .slider-toggle:before {
 }
 
 .Create-New-Account {
-  width: 576px;
-  height: 147px;
+  width: 575.73px;
+  height: 147.01px;
   margin-top: 5px;
-  margin-left: 80px;
+  margin-left: 30px;
+  margin-right: 70px;
   font-family: 'Cooper Black', sans-serif;
   font-weight: 400;
   font-size: 50px;
   line-height: 50.35px;
-  align-items: center;
   text-align: center;
-  text-align-all: center;
   color: #45590B;
 
 }
@@ -273,8 +276,8 @@ input[type="checkbox"]:checked + .slider-toggle:before {
 .subtitle{
   width: 522.55px;
   height: 40px;
-  margin-left: 95px;
-  text-align: -webkit-center;
+  margin-left: 63px;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 501;
   font-size:  23.16px;

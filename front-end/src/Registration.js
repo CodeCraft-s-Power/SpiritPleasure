@@ -32,7 +32,7 @@ class Registration extends Component {
                                 <span className="slider-toggle"></span>
                             </label>
                             <div className="top-text">
-                                <h1 className="Create-New-Account">Create new account</h1>
+                                <h1 className="Create-New-Account">CREATE NEW ACCOUNT</h1>
                                 <h2 className="subtitle"> Already registered?  <a target="" href="" className="login-text"> Login </a>
                                 </h2>
                             </div>
