@@ -61,4 +61,3 @@ class Registration extends Component {
 
 export default Registration;
 
-

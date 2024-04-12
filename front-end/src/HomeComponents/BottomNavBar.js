@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
-import "./BottonNavBar.css"
+import "./BottomNavBar.css"
 class BottomNavBar extends Component {
     render() {
         return (
             <div>
                 <ul className="ulnavbar">
                     <li id="li-text"> <span className="custom-span">Spirit Pleasure</span>
-                    <br/>
-                       <span className='custom-span2'> насолодись Україною</span>
+                        <br/>
+                        <span className='custom-span2'> насолодись Україною</span>
                     </li>
                     <li>Home</li>
                     <li>Find</li>
