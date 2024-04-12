@@ -1,29 +1,32 @@
 [
-  {
-    "model": "place.place",
-    "pk": 1,
-    "fields": {
-      "name": "testPlace",
-      "description": "test1",
-      "location": "Lviv"
+    {
+        "model": "place.address",
+        "pk": 1,
+        "fields": {
+            "street": "123 Main St",
+            "city": "Exampleville",
+            "region": "Examplestate",
+            "postalcode": "12345"
+        }
+    },
+    {
+        "model": "place.address",
+        "pk": 2,
+        "fields": {
+            "street": "456 Elm St",
+            "city": "Sampletown",
+            "region": "Samplestate",
+            "postalcode": "54321"
+        }
+    },
+    {
+        "model": "place.place",
+        "pk": 1,
+        "fields": {
+            "name": "Example Place",
+            "description": "This is an example place",
+            "image": null,
+            "location": 1
+        }
     }
-  },
-  {
-    "model": "place.place",
-    "pk": 2,
-    "fields": {
-      "name": "anotherPlace",
-      "description": "test2",
-      "location": "Kyiv"
-    }
-  },
-  {
-    "model": "place.place",
-    "pk": 3,
-    "fields": {
-      "name": "Place",
-      "description": "Interesting",
-      "location": "Rivne"
-    }
-  }
 ]
