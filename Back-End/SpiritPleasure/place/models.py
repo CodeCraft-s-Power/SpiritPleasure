@@ -15,7 +15,7 @@ class Place(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     image = models.ImageField(upload_to='place_images/', blank=True, null=True)
-    location = models.ForeignKey(Address , on_delete=models.SET_NULL())
+    location = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True)
 
     def __str__(self):
         return self.name
