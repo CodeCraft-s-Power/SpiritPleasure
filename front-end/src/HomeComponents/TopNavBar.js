@@ -23,7 +23,7 @@ class TopNavBar extends Component {
             <div className={`container ${isDarkMode ? 'dark-theme' : ''}`}>
                 <div className="slider-button">
                     <div className="Exit-button">
-                         <button className="exit-button-button"></button>
+                        <button className="exit-button-button"></button>
                     </div>
                     <label className="slider">
                         <input type="checkbox" checked={isDarkMode} onChange={this.toggleTheme} value="true"/>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TopNavBar from "./TopNavBar";
 import BottomNavBar from "./BottomNavBar";
-import './Home.css'
+import './HomePage.css'
 
 class HomePage extends Component {
     render() {
