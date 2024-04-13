@@ -4,15 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="placeCreateSetNull">
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="placeCreateSetNull1">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e925717d-30be-4d9c-a600-0df8cd9f7829/storage_v2/_src_/schema/main.uQUzAA.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseLocalColorSettings">
+    <colors>
+      <entry key="0d118939-1d74-45ea-99f6-f0d3b4ad3870" value="Green" />
+    </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,32 +105,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.SpiritPleasure.executor": "Run",
-    "Python tests.Python tests for tests.UserIntegrationTest.executor": "Run",
-    "Python tests.Python tests for tests.UserRegisterSerializerTestCase.executor": "Run",
-    "Python.tests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/Project/SpiritPleasure/Back-End/SpiritPleasure",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
-    "ts.external.directory.path": "D:\\PyCharm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.SpiritPleasure.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.UserIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.UserRegisterSerializerTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project/SpiritPleasure/Back-End/SpiritPleasure&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\PyCharm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python tests.Python tests for tests.UserRegisterSerializerTestCase">
     <configuration name="SpiritPleasure" type="JavascriptDebugType" uri="http://localhost:3000/index.html">
       <method v="2" />
@@ -223,6 +236,8 @@
       <workItem from="1712841058816" duration="294000" />
       <workItem from="1712841429983" duration="504000" />
       <workItem from="1712851830181" duration="716000" />
+      <workItem from="1713013648172" duration="6021000" />
+      <workItem from="1713034989269" duration="2618000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -360,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712956796128</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="placeCreateSetNull1">
+      <option name="closed" value="true" />
+      <created>1712957523991</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1712957523991</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +453,8 @@
     <MESSAGE value="placeCreate" />
     <MESSAGE value="placeCreate1" />
     <MESSAGE value="placeCreateSetNull" />
-    <option name="LAST_COMMIT_MESSAGE" value="placeCreateSetNull" />
+    <MESSAGE value="placeCreateSetNull1" />
+    <option name="LAST_COMMIT_MESSAGE" value="placeCreateSetNull1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />
