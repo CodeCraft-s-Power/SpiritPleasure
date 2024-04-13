@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="home page">
-      <change afterPath="$PROJECT_DIR$/front-end/public/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/LoginComponents/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front-end/src/LoginComponents/Login.js" afterDir="false" />
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="placeCreateSetNull">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,19 +17,45 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX File" />
         <option value="HTML File" />
-        <option value="Python Script" />
-        <option value="TypeScript File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JSX File" />
+        <option value="Python Script" />
+        <option value="package.json" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/main" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="forPulls" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="forPulls" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -50,68 +67,82 @@
     &quot;assignee&quot;: &quot;RomanRavlyk&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/CodeCraft-s-Power/SpiritPleasure.git&quot;,
-    &quot;accountId&quot;: &quot;7985b7fd-892f-4676-aa12-6bb50f3fb4a7&quot;
-  }
-}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="2474d9fc-ef8c-41d0-96e9-c508882a7b15" />
+        <option name="url" value="https://github.com/CodeCraft-s-Power/SpiritPleasure.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2eMjaumCgP2oIRWVeutRPL0N7wc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.SpiritPleasure.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests.UserIntegrationTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/admin/WebstormProjects/SpiritPleasure/front-end/src&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/WebstormProjects/untitled1&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JavaScript Debug.SpiritPleasure.executor": "Run",
+    "Python tests.Python tests for tests.UserIntegrationTest.executor": "Run",
+    "Python tests.Python tests for tests.UserRegisterSerializerTestCase.executor": "Run",
+    "Python.tests.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Project/SpiritPleasure/Back-End/SpiritPleasure",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "D:\\PyCharm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure\front-end\public\img" />
-      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure\front-end\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Admin\WebstormProjects\SpiritPleasure2\front-end\src\LoginComponents" />
-      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure\front-end\src\img" />
-      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure\front-end\src" />
-      <recent name="C:\All files\SpiritPleasure" />
-      <recent name="C:\All files\SpiritPleasure\Front-End" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JavaScript Debug.SpiritPleasure">
+}]]></component>
+  <component name="RunManager" selected="Python tests.Python tests for tests.UserRegisterSerializerTestCase">
     <configuration name="SpiritPleasure" type="JavascriptDebugType" uri="http://localhost:3000/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SpiritPleasure" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for tests.UserIntegrationTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -130,9 +161,44 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for tests.UserRegisterSerializerTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SpiritPleasure" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Back-End/SpiritPleasure" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.UserRegisterSerializerTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.SpiritPleasure" />
+      <item itemvalue="Python.tests" />
+      <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
+      <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
+        <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
+        <item itemvalue="Python.tests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -145,25 +211,18 @@
       <workItem from="1711721410097" duration="1521000" />
       <workItem from="1711805648045" duration="5479000" />
       <workItem from="1711889736008" duration="4590000" />
-      <workItem from="1711901298689" duration="149000" />
-      <workItem from="1711979228329" duration="4414000" />
-      <workItem from="1711999720573" duration="4647000" />
-      <workItem from="1712006223317" duration="1970000" />
-      <workItem from="1712008229891" duration="297000" />
-      <workItem from="1712405169381" duration="6595000" />
-      <workItem from="1712415218653" duration="860000" />
-      <workItem from="1712491084316" duration="2989000" />
-      <workItem from="1712494530401" duration="1812000" />
-      <workItem from="1712520345199" duration="3082000" />
-      <workItem from="1712924500325" duration="1842000" />
-      <workItem from="1712927371856" duration="124000" />
-      <workItem from="1712927823634" duration="333000" />
-      <workItem from="1712928298342" duration="49000" />
-      <workItem from="1712928434751" duration="811000" />
-      <workItem from="1712932156289" duration="45000" />
-      <workItem from="1712932550725" duration="1198000" />
-      <workItem from="1713022678219" duration="561000" />
-      <workItem from="1713023326380" duration="1410000" />
+      <workItem from="1712128903779" duration="2597000" />
+      <workItem from="1712220522192" duration="2002000" />
+      <workItem from="1712246415117" duration="661000" />
+      <workItem from="1712296323073" duration="1023000" />
+      <workItem from="1712483697721" duration="3957000" />
+      <workItem from="1712496757873" duration="1767000" />
+      <workItem from="1712765205059" duration="6706000" />
+      <workItem from="1712822844431" duration="231000" />
+      <workItem from="1712834356782" duration="46000" />
+      <workItem from="1712841058816" duration="294000" />
+      <workItem from="1712841429983" duration="504000" />
+      <workItem from="1712851830181" duration="716000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -181,53 +240,158 @@
       <option name="project" value="LOCAL" />
       <updated>1711722291913</updated>
     </task>
-    <task id="LOCAL-00003" summary="fix: modified auth/register">
+    <task id="LOCAL-00003" summary="tryDB">
       <option name="closed" value="true" />
-      <created>1712495421526</created>
+      <created>1712064329300</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1712495421526</updated>
+      <updated>1712064329300</updated>
     </task>
-    <task id="LOCAL-00004" summary=" feat:theme button1">
+    <task id="LOCAL-00004" summary="tryDB">
       <option name="closed" value="true" />
-      <created>1712784875302</created>
+      <created>1712075838223</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1712784875302</updated>
+      <updated>1712075838224</updated>
     </task>
-    <task id="LOCAL-00005" summary="home page">
+    <task id="LOCAL-00005" summary="MySQL_Con">
       <option name="closed" value="true" />
-      <created>1712861760097</created>
+      <created>1712075875954</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1712861760097</updated>
+      <updated>1712075875954</updated>
     </task>
-    <task id="LOCAL-00006" summary="test commit">
+    <task id="LOCAL-00006" summary="MySQL_Con">
       <option name="closed" value="true" />
-      <created>1712932698552</created>
+      <created>1712076104287</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1712932698552</updated>
+      <updated>1712076104287</updated>
     </task>
-    <task id="LOCAL-00007" summary="home page">
+    <task id="LOCAL-00007" summary="MySQL_Con">
       <option name="closed" value="true" />
-      <created>1712932997744</created>
+      <created>1712076470248</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1712932997744</updated>
+      <updated>1712076470248</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixtures0">
+      <option name="closed" value="true" />
+      <created>1712487406696</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1712487406696</updated>
+    </task>
+    <task id="LOCAL-00009" summary="try_tests">
+      <option name="closed" value="true" />
+      <created>1712499509636</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1712499509636</updated>
+    </task>
+    <task id="LOCAL-00010" summary="try_tests">
+      <option name="closed" value="true" />
+      <created>1712777166342</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1712777166342</updated>
+    </task>
+    <task id="LOCAL-00011" summary="tryToMakePlace">
+      <option name="closed" value="true" />
+      <created>1712777266652</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1712777266652</updated>
+    </task>
+    <task id="LOCAL-00012" summary="testForUser1">
+      <option name="closed" value="true" />
+      <created>1712859069244</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1712859069244</updated>
+    </task>
+    <task id="LOCAL-00013" summary="placeCreate">
+      <option name="closed" value="true" />
+      <created>1712955043461</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1712955043462</updated>
+    </task>
+    <task id="LOCAL-00014" summary="placeCreate1">
+      <option name="closed" value="true" />
+      <created>1712955377141</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1712955377141</updated>
+    </task>
+    <task id="LOCAL-00015" summary="placeCreate1">
+      <option name="closed" value="true" />
+      <created>1712956203162</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1712956203162</updated>
+    </task>
+    <task id="LOCAL-00016" summary="placeCreate1">
+      <option name="closed" value="true" />
+      <created>1712956242657</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1712956242657</updated>
+    </task>
+    <task id="LOCAL-00017" summary="placeCreateSetNull">
+      <option name="closed" value="true" />
+      <created>1712956796128</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1712956796128</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/Dev" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -238,6 +402,17 @@
                   <entry key="Show.Git.Branches" value="true" />
                 </map>
               </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
             </State>
           </value>
         </entry>
@@ -245,12 +420,20 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Created" />
-    <MESSAGE value="fix: modified auth/register" />
-    <MESSAGE value=" feat:theme button1" />
-    <MESSAGE value="test commit" />
-    <MESSAGE value="home page" />
-    <option name="LAST_COMMIT_MESSAGE" value="home page" />
+    <MESSAGE value="tryDB" />
+    <MESSAGE value="MySQL_Con" />
+    <MESSAGE value="fixtures0" />
+    <MESSAGE value="try_tests" />
+    <MESSAGE value="tryToMakePlace" />
+    <MESSAGE value="testForUser1" />
+    <MESSAGE value="placeCreate" />
+    <MESSAGE value="placeCreate1" />
+    <MESSAGE value="placeCreateSetNull" />
+    <option name="LAST_COMMIT_MESSAGE" value="placeCreateSetNull" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />
+    <SUITE FILE_PATH="coverage/SpiritPleasure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1712485632775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication" />
   </component>
 </project>
