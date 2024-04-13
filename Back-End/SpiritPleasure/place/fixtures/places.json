@@ -26,7 +26,9 @@
             "name": "Example Place",
             "description": "This is an example place",
             "image": null,
-            "location": 1
+            "location": 1,
+            "relaxation_type": "SPA",
+            "trip_goal": "Розслабитися"
         }
     }
 ]
