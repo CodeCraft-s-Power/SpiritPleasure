@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'rest_framework',
     'place',
+    'filters',
+    'search',
     'authentication.apps.AuthenticationConfig',
     'rest_framework.authtoken',
     'django.contrib.admin',
@@ -39,8 +41,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-
     'django_filters',
 ]
 
@@ -81,27 +81,27 @@ WSGI_APPLICATION = 'SpiritPleasure.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SpiritPleasure',
-        'USER': 'backendmanager',
-        'PASSWORD': 'sleep-eat-code-repeat',
-        'HOST': 'localhost',
-        'PORT': '3306',
-        'default-character-set': 'utf8',
-    },
-    "OPTIONS": {
-        "init_command": "SET default_storage_engine=INNODB",
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'SpiritPleasure',
+#         'USER': 'backendmanager',
+#         'PASSWORD': 'sleep-eat-code-repeat',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#         'default-character-set': 'utf8',
+#     },
+#     "OPTIONS": {
+#         "init_command": "SET default_storage_engine=INNODB",
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -146,5 +146,9 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
-    ]
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
