@@ -1,6 +1,7 @@
 from rest_framework import serializers
-from .models import Place, Address
+from .models import Place, Address, History
 from .models import RelaxationType, TripGoal
+from django.contrib.auth.models import User
 
 
 class AddressSerializer(serializers.ModelSerializer):
@@ -30,3 +31,11 @@ class PlaceSerializer(serializers.ModelSerializer):
         instance.trip_goal = validated_data.get('trip_goal', instance.trip_goal)
         instance.save()
         return instance
+
+class HistorySerializer(serializers.ModelSerializer):
+    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
+    place = serializers.PrimaryKeyRelatedField(queryset=Place.objects.all())
+
+    class Meta:
+        model = History
+        fields = ['id', 'user', 'place', 'is_favorite']

@@ -50,6 +50,7 @@ class Place(models.Model):
 class History(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     place = models.ForeignKey(Place, on_delete=models.CASCADE)
+    is_favorite = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"History for {self.user.username}: {self.place.name}"
+        return f"History for {self.user.username}: {self.place.name}, Favorite: {self.is_favorite}"
