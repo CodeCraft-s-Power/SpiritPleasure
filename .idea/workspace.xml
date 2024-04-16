@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="EnumPlace">
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/filters/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/search/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.js" afterDir="false" />
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="Push 0:35 14.04">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +31,17 @@
         <option value="Python Script" />
         <option value="package.json" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -233,7 +229,9 @@
       <workItem from="1712841429983" duration="504000" />
       <workItem from="1712851830181" duration="716000" />
       <workItem from="1713013648172" duration="6021000" />
-      <workItem from="1713034989269" duration="8730000" />
+      <workItem from="1713034989269" duration="9863000" />
+      <workItem from="1713247694611" duration="131000" />
+      <workItem from="1713277127152" duration="416000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -395,7 +393,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713043404871</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Push 0:35 14.04">
+      <option name="closed" value="true" />
+      <created>1713044172173</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1713044172173</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,6 +415,16 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Dev" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
                   <option value="origin/Dev" />
                 </option>
               </RecentGroup>
@@ -420,11 +436,6 @@
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/dev" />
-                </option>
-              </RecentGroup>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="main" />
                 </option>
               </RecentGroup>
             </list>
@@ -447,7 +458,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Dev" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -473,7 +484,8 @@
     <MESSAGE value="placeCreateSetNull1" />
     <MESSAGE value="addHistory&amp;FixedImg" />
     <MESSAGE value="EnumPlace" />
-    <option name="LAST_COMMIT_MESSAGE" value="EnumPlace" />
+    <MESSAGE value="Push 0:35 14.04" />
+    <option name="LAST_COMMIT_MESSAGE" value="Push 0:35 14.04" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />

@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 class RelaxationType(models.TextChoices):
     FAMILY = 'Сімейний'
     YOUTH = 'Молодіжний'
@@ -45,3 +46,10 @@ class Place(models.Model):
 
     def __str__(self):
         return self.name
+
+class History(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    place = models.ForeignKey(Place, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return f"History for {self.user.username}: {self.place.name}"
