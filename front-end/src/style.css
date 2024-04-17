@@ -14,14 +14,11 @@
   src: url('../src/assets/Montserrat-Italic-VariableFont_wght.ttf')  ;
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 
 .container {
   display: flex;
@@ -45,8 +42,7 @@
   background-position: center;
 }
 
-
-.logo-left-pane{
+.logo-left-pane {
   width: 426.58px;
   height: 354.73px;
   background-size: contain;
@@ -56,17 +52,15 @@
   left: 25%;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
-  background-image: url('../src/img/logo (1).png');
+  background-image: url('../src/img/logo.light.png');
 }
 
-
-.right-pane{
+.right-pane {
   justify-content: space-between;
 }
 
-
 .top-right,
-.bottom-right{
+.bottom-right {
   width: 100%;
 }
 
@@ -87,9 +81,7 @@
   margin-bottom: 150px;
 }
 
-
-
-.input-group{
+.input-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -97,52 +89,48 @@
   padding: 20px;
 }
 
-
-
 label {
   margin-right: 5px;
 }
 
-#password,#name,#email{
-  border-radius:50.35px;
+#password,
+#name,
+#email {
+  border-radius: 50.35px;
   padding: 5px;
   border: none;
   background-color: rgba(195, 224, 180, 1);
-  color:rgba(0, 0, 0, 0.5);
-  width: 571.49px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 500px;
   height: 60px;
   outline: none;
 }
 
-
-
-.Name,.Password,.Email{
+.Name,
+.Password,
+.Email {
   font-size: 21px;
   font-family: "Montserrat", sans-serif;
 }
 
-
-
-.logo-text{
+.logo-text {
   font-size: 70px;
   color: rgba(69, 89, 11, 1);
   margin-top: 290px;
   font-family: 'Cooper Black', sans-serif;
-
 }
 
-.logo-text2{
+.logo-text2 {
   font-size: 40px;
   color: rgba(134, 161, 53, 1);
   font-family: "Kurale", serif;
 }
 
-
-.Create-Account-button{
+.Create-Account-button {
   margin-top: 20px;
   width: 350px;
   height: 55px;
-  background-color:  rgba(69, 89, 11, 1);
+  background-color: rgba(69, 89, 11, 1);
   color: #fff;
   border: none;
   border-radius: 50.35px;
@@ -150,7 +138,6 @@ label {
   cursor: pointer;
   outline: none;
 }
-
 
 .theme-button {
   background-color: rgba(69, 89, 11, 1);
@@ -162,49 +149,47 @@ label {
   outline: none;
 }
 
-
 .dark-theme {
   background-color: black;
   color: #fff;
 }
 
-
 .theme-button-container {
   float: right;
   margin-right: 20px;
   margin-top: 17px;
-  margin-left: 1818px;
+  margin-left: 1818px; /* Виправлення позиціонування кнопки теми */
 }
-
 
 .dark-theme .left-pane {
   background-image: url('../src/img/fon.png'); /* Фотографія для темної теми */
 }
 
-.dark-theme .logo-text{
+.dark-theme .logo-left-pane {
+  background-image: url('../src/img/logo.dark.png');
+}
+
+.dark-theme .logo-text {
   color: rgba(200, 219, 190, 1);
 }
 
-
-.dark-theme .logo-text2{
-  color:rgba(232, 232, 232, 1);
+.dark-theme .logo-text2 {
+  color: rgba(232, 232, 232, 1);
 }
 
-.dark-theme .top-right{
-  border-bottom: 2px solid rgba(245, 245, 245, 1) ;
+.dark-theme .top-right {
+  border-bottom: 2px solid rgba(245, 245, 245, 1);
 }
 
-.dark-theme .Create-Account-button{
-  background-color:  rgba(134, 161, 53, 1);
-;
+.dark-theme .Create-Account-button {
+  background-color: rgba(134, 161, 53, 1);
 }
-
 
 .dark-theme #password,
 .dark-theme #name,
 .dark-theme #email {
   background-color: rgba(69, 89, 11, 1);
-  color:  rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .slider {
@@ -227,8 +212,7 @@ label {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color:  rgba(49, 36, 30, 1);
-;
+  background-color: rgba(49, 36, 30, 1);
   -webkit-transition: .4s;
   transition: .4s;
   border-radius: 26px;
@@ -248,8 +232,7 @@ label {
 }
 
 input[type="checkbox"]:checked + .slider-toggle {
-  background-color:  rgba(209, 200, 193, 1);
-;
+  background-color: rgba(209, 200, 193, 1);
 }
 
 input[type="checkbox"]:checked + .slider-toggle:before {
@@ -270,33 +253,49 @@ input[type="checkbox"]:checked + .slider-toggle:before {
   line-height: 50.35px;
   text-align: center;
   color: #45590B;
-
 }
 
-.subtitle{
+.subtitle {
   width: 522.55px;
   height: 40px;
   margin-left: 63px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 501;
-  font-size:  23.16px;
+  font-size: 23.16px;
   line-height: 1px;
   color: #000000;
-
 }
 
-
-.dark-theme .subtitle{
+/* Додані стилі для темної теми */
+.dark-theme .subtitle {
   color: rgba(217, 217, 217, 1);
 }
 
-
-.dark-theme .login-text{
+.dark-theme .login-text {
   color: rgba(71, 193, 220, 1);
   text-decoration: none;
 }
-.login-text{
+
+.login-text {
   color: rgba(71, 193, 220, 1);
   text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .left-pane {
+    height: 25%;
+  }
+  .right-pane {
+    height: 75%;
+  }
+  .top-right {
+    justify-content: center;
+  }
+  .bottom-right {
+    justify-content: center;
+  }
 }
