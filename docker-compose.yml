@@ -1,0 +1,35 @@
+version: '3.12'
+
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: sleep-eat-code-repeat
+      MYSQL_DATABASE: SpiritPleasure
+      MYSQL_USER: backendmanager
+      MYSQL_PASSWORD: sleep-eat-code-repeat
+    ports:
+      - "3306:3306"
+
+  backend:
+    build:
+      context: ./Back-End/SpiritPleasure
+      dockerfile: Dockerfile
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    volumes:
+      - /app/SpiritPleasure/Back-End/SpiritPleasure/
+    depends_on: [db]
+
+
+  frontend:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    command: npm start 0.0.0.0:3000
+    ports:
+      - "3000:3000"
+    volumes:
+      - /frnt/SpiritPleasure/front-end/
