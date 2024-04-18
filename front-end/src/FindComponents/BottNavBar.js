@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import "./BottNavBar.css"
-class BottomNavBar extends Component {
+class BottNavBar extends Component {
     render() {
         return (
             <div>
@@ -20,4 +20,4 @@ class BottomNavBar extends Component {
     }
 }
 
-export default BottomNavBar;
+export default BottNavBar;

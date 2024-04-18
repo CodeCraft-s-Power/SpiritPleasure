@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('../assets/MontserratAlternates-Black.ttf');
+}
+
+
+
+.main-image-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-image {
+    width: 1739px;
+    height: 516px;
+    background-image: url("../img/mainImage.png");
+    border: 4px solid rgba(69, 89, 11, 1);
+    border-radius: 25px;
+}
+
+
+
+
+.main-image-text-container{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 270px;
+}
+
+
+.main-image-text{
+    font-size: 55px;
+    color: rgba(49, 36, 30, 1);
+    font-family: 'Montserrat Alternates';
+
+}
