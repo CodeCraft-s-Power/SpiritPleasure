@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'SpiritPleasure',
         'USER': 'backendmanager',
         'PASSWORD': 'sleep-eat-code-repeat',
-        'HOST': 'db',
+        'HOST': 'localhost',
         'PORT': '3306',
         'default-character-set': 'utf8',
     },
