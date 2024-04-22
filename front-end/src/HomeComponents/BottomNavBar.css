@@ -1,4 +1,9 @@
 @font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/static/Montserrat-Regular.ttf');
+}
+
+@font-face {
     font-family: 'Cooper Black';
     src: url('../assets/COOPBL.TTF') ;
 }
@@ -9,7 +14,7 @@
 }
 
 
-.ulnavbar{
+.ulnavbar2{
     display: flex;
     justify-content: flex-end;
     list-style-type:none ;
@@ -17,21 +22,22 @@
     color: rgba(49, 36, 30, 1);
     border-bottom: 2px solid black;
     width: 1750px;
-    margin-left: 50px;
+    margin-left: 80px;
 
     margin-right: 107px;
 }
-.ulnavbar li {
+.ulnavbar2 li {
     margin-right: 107px;
+    font-family:Montserrat ;
 }
 
-#li-text{
+#li-text1{
     margin-top: -30px;
     margin-right: 550px;
     color:  rgba(69, 89, 11, 1);
 }
 
-.custom-span{
+.custom-span1{
 
     font-family: "Cooper Black";
     font-size: 50px;

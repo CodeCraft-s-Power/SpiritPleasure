@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Login from "./LoginComponents/Login";
 import './style.css';
 
 class Registration extends Component {
