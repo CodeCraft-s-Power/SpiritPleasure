@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/static/Montserrat-Regular.ttf');
+}
+
+.twoItems{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 110px;
+    margin-top: 50px;
+}
+
+.text{
+    width: 1070px;
+    height: 161px;
+    font-size: 20px;
+    font-family:Montserrat ;
+    color: rgba(69, 89, 11, 1);
+    text-align: center;
+    margin-right: 60px;
+
+}
+
+
+.goButton{
+    width: 200px;
+    height: 58px;
+    border-radius: 50px;
+    border: none;
+    background: rgba(69, 89, 11, 1);
+    color:  rgba(245, 245, 245, 1);
+    font-size: 25px;
+    font-weight: bold;
+    font-family:Montserrat ;
+}

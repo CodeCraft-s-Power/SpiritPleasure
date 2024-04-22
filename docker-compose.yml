@@ -1,0 +1,43 @@
+version: '3.12'
+
+services:
+  db:
+    image: mysql:8.0.36
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: DB_PASSWORD
+      MYSQL_DATABASE: SpiritPleasure
+      MYSQL_USER: DB_USER
+      MYSQL_PASSWORD: DB_PASSWORD
+    ports:
+      - "3306:3306"
+    secrets:
+      - DB_USER
+      - DB_PASSWORD
+
+  backend:
+    build:
+      context: ./Back-End/SpiritPleasure
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - /app/SpiritPleasure/Back-End/SpiritPleasure/
+    depends_on: [db]
+
+
+  frontend:
+    build:
+      context: ./front-end
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - /frnt/SpiritPleasure/front-end/
+
+
+secrets:
+  DB_USER:
+    file: ./secrets/db_user.txt
+  DB_PASSWORD:
+    file: ./secrets/db_password.txt
