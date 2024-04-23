@@ -6,7 +6,7 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: DB_PASSWORD
-      MYSQL_DATABASE: spiritpleasure
+      MYSQL_DATABASE: SpiritPleasure
       MYSQL_USER: DB_USER
       MYSQL_PASSWORD: DB_PASSWORD
     ports:
@@ -36,8 +36,8 @@ services:
       - /frnt/SpiritPleasure/front-end/
 
 
-secrets:
-  DB_USER:
-    file: ./secrets/db_user.txt
-  DB_PASSWORD:
-    file: ./secrets/db_password.txt
+#secrets:
+#  DB_USER:
+#    file: ./secrets/db_user.txt
+#  DB_PASSWORD:
+#    file: ./secrets/db_password.txt
