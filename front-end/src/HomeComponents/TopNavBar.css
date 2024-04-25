@@ -18,9 +18,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:  rgba(49, 36, 30, 1);
-;
-    -webkit-transition: .4s;
+    background-color: rgba(49, 36, 30, 1);
     transition: .4s;
     border-radius: 26px;
 }
@@ -33,35 +31,26 @@
     left: 3px;
     bottom: 3px;
     background-color: white;
-    -webkit-transition: .4s;
     transition: .4s;
     border-radius: 50%;
 }
 
 input[type="checkbox"]:checked + .slider-toggle {
-    background-color:  rgba(209, 200, 193, 1);
-;
+    background-color: rgba(209, 200, 193, 1);
 }
 
 input[type="checkbox"]:checked + .slider-toggle:before {
-    -webkit-transform: translateX(22px);
-    -ms-transform: translateX(22px);
     transform: translateX(22px);
 }
 
 
-.slider-button{
+.slider-button {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between; /* Змінено з 'flex-end' на 'space-between' */
+    align-items: center; /* Додано вирівнювання по вертикалі */
 }
 
-.slider-button{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.exit-button-button{
+.exit-button-button {
     width: 46px;
     height: 46px;
     background-image: url("../img/login.png");

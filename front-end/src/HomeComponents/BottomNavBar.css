@@ -35,10 +35,10 @@
     margin-top: -30px;
     margin-right: 550px;
     color:  rgba(69, 89, 11, 1);
+    text-align: center;
 }
 
 .custom-span1{
-
     font-family: "Cooper Black";
     font-size: 50px;
 
@@ -46,5 +46,22 @@
 .custom-span2{
     font-family: "Kurale";
     font-size:30px ;
-    margin-left:30px ;
+    margin-right: 35px;
 }
+
+
+.ulnavbar2 li a {
+    text-decoration: none;
+    color: rgba(49, 36, 30, 1);
+}
+
+.ulnavbar2 li a:hover {
+    color: rgba(49, 36, 30, 0.7);
+}
+
+.ulnavbar2 li a.active {
+    font-weight: bold;
+}
+
+
+
