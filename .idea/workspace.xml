@@ -4,10 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="add: favorite &amp; historyURL">
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="delete: search&amp;filter">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/migrations/0002_delete_customuser.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0002_alter_place_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0003_alter_place_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0004_alter_place_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0005_alter_place_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0006_alter_place_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_place_relaxation_type_place_trip_goal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0008_history.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0009_history_is_favorite.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
@@ -15,11 +33,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseLocalColorSettings">
-    <colors>
-      <entry key="0d118939-1d74-45ea-99f6-f0d3b4ad3870" value="Green" />
-    </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,7 +97,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -237,7 +250,13 @@
       <workItem from="1713537998111" duration="3648000" />
       <workItem from="1713628860675" duration="22000" />
       <workItem from="1713635587072" duration="196000" />
-      <workItem from="1713821821918" duration="1281000" />
+      <workItem from="1713821821918" duration="2798000" />
+      <workItem from="1713882765836" duration="1494000" />
+      <workItem from="1713894621332" duration="18000" />
+      <workItem from="1713894661591" duration="4341000" />
+      <workItem from="1713901025947" duration="447000" />
+      <workItem from="1713901832079" duration="743000" />
+      <workItem from="1714055025569" duration="7062000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -431,7 +450,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713822254156</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update">
+      <option name="closed" value="true" />
+      <created>1713823278939</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1713823278940</updated>
+    </task>
+    <task id="LOCAL-00026" summary="delete: search&amp;filter">
+      <option name="closed" value="true" />
+      <created>1713901131592</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1713901131592</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,12 +480,12 @@
             <list>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="main" />
+                  <option value="origin/Dev" />
                 </option>
               </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
-                  <option value="origin/Dev" />
+                  <option value="main" />
                 </option>
               </RecentGroup>
               <RecentGroup>
@@ -488,7 +523,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -517,7 +552,9 @@
     <MESSAGE value="Push 0:35 14.04" />
     <MESSAGE value="fixed com: history" />
     <MESSAGE value="add: favorite &amp; historyURL" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: favorite &amp; historyURL" />
+    <MESSAGE value="update" />
+    <MESSAGE value="delete: search&amp;filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete: search&amp;filter" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />

@@ -15,7 +15,5 @@ urlpatterns = [
     path('', include('authentication.urls')),
     path('', include('django.contrib.auth.urls')),
     path('', include(router.urls)),
-    path('', include('filters.urls')),
-    path('', include('search.urls')),
     path('history/', HistoryListView.as_view(), name='history-list'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

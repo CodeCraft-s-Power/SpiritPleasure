@@ -36,8 +36,8 @@ services:
       - /frnt/SpiritPleasure/front-end/
 
 
-#secrets:
-#  DB_USER:
-#    file: ./secrets/db_user.txt
-#  DB_PASSWORD:
-#    file: ./secrets/db_password.txt
+secrets:
+  DB_USER:
+    file: ./secrets/db_user.txt
+  DB_PASSWORD:
+    file: ./secrets/db_password.txt

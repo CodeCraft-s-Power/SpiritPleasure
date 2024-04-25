@@ -31,8 +31,6 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'rest_framework',
     'place',
-    'filters',
-    'search',
     'authentication.apps.AuthenticationConfig',
     'rest_framework.authtoken',
     'django.contrib.admin',
@@ -87,7 +85,7 @@ DATABASES = {
         'NAME': 'SpiritPleasure',
         'USER': 'backendmanager',
         'PASSWORD': 'sleep-eat-code-repeat',
-        'HOST': 'db',
+        'HOST': 'localhost',#'db',
         'PORT': '3306',
         'default-character-set': 'utf8',
     },
@@ -148,5 +146,4 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
-    'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
 }
