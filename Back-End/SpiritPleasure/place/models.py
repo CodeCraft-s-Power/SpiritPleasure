@@ -29,7 +29,7 @@ class TripGoal(models.TextChoices):
 
 class Image(models.Model):
     image = models.ImageField(upload_to='place_images/', blank=True, null=True)
-    #place = models.ManyToManyField('Place', related_name='images')
+    place = models.ManyToManyField('Place', related_name='images')
 
     def __str__(self):
         return self.image.url if self.image else ''

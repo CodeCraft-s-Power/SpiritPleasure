@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'SpiritPleasure.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SpiritPleasure',
+        'NAME': 'spiritpleasure',
         'USER': 'backendmanager',
         'PASSWORD': 'sleep-eat-code-repeat',
         'HOST': 'localhost',#'db',

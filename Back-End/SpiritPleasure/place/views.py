@@ -5,6 +5,17 @@ from .models import Place, Address, History
 from .serializers import PlaceSerializer, AddressSerializer, HistorySerializer
 
 
+class PlaceCreateAPIView(generics.CreateAPIView):
+    serializer_class = PlaceSerializer
+
+    def get_serializer_context(self):
+        context = super().get_serializer_context()
+        if self.request.method == 'GET':
+            context['images_as_base64'] = False
+        else:
+            context['images_as_base64'] = True
+        return context
+
 class PlaceViewSet(viewsets.ModelViewSet):
     queryset = Place.objects.all()
     serializer_class = PlaceSerializer

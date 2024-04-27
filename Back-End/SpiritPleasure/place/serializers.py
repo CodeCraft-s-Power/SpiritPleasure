@@ -15,21 +15,23 @@ class ImageSerializer(serializers.ModelSerializer):
         model = Image
         fields = ['id', 'image']
 
+
 class PlaceSerializer(serializers.ModelSerializer):
     relaxation_type = serializers.ChoiceField(choices=RelaxationType.choices)
     trip_goal = serializers.ChoiceField(choices=TripGoal.choices)
-    image = ImageSerializer(many=True)
-
+    images = ImageSerializer(many=True, required=False)
     class Meta:
         model = Place
-        fields = ['id', 'name', 'description', 'image', 'location', 'relaxation_type', 'trip_goal']
+        fields = ['id', 'name', 'description', 'images', 'location', 'relaxation_type', 'trip_goal']
         read_only_fields = ['id']
 
     def create(self, validated_data):
         images_data = self.context.get('request').FILES.getlist('images')
         place = Place.objects.create(**validated_data)
-        for image_data in images_data:
-            Image.objects.create(place=place, image=image_data)
+
+        if images_data:
+            for image_data in images_data:
+                Image.objects.create(place=place, image=image_data)
         return place
 
     def update(self, instance, validated_data):
