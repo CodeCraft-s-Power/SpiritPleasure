@@ -1,8 +1,8 @@
 from rest_framework import viewsets, generics, status
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .models import Place, Address, History
-from .serializers import PlaceSerializer, AddressSerializer, HistorySerializer
+from .models import Place, Address, History, Image
+from .serializers import PlaceSerializer, AddressSerializer, HistorySerializer, ImageSerializer
 
 
 class PlaceCreateAPIView(generics.CreateAPIView):
@@ -15,6 +15,7 @@ class PlaceCreateAPIView(generics.CreateAPIView):
         else:
             context['images_as_base64'] = True
         return context
+
 
 class PlaceViewSet(viewsets.ModelViewSet):
     queryset = Place.objects.all()
@@ -32,8 +33,14 @@ class AddressViewSet(viewsets.ModelViewSet):
     queryset = Address.objects.all()
     serializer_class = AddressSerializer
 
+
 class HistoryListView(APIView):
     def get(self, request, *args, **kwargs):
         queryset = History.objects.all()
         serializer = HistorySerializer(queryset, many=True)
         return Response(serializer.data)
+
+
+class ImageViewSet(viewsets.ModelViewSet):
+    queryset = Image.objects.all()
+    serializer_class = ImageSerializer

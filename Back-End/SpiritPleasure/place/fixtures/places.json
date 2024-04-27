@@ -49,7 +49,7 @@
         "pk": 1,
         "fields": {
             "place": [1],
-            "image": 1
+            "image": "place_images/example_image1.jpg"
         }
     },
     {
@@ -57,7 +57,7 @@
         "pk": 2,
         "fields": {
             "place": [1],
-            "image": 2
+            "image": "place_images/example_image2.jpg"
         }
     }
 ]
