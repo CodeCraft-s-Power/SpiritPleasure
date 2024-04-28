@@ -4,19 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="Push 0:35 14.04">
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="mobile registration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/Find.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/Find.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/BottomNavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/BottomNavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/BottomNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/BottomNavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/HomePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/TopNavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/TopNavBar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/TopNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/TopNavBar.js" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +111,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\PyCharm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -204,13 +193,6 @@
       <item itemvalue="JavaScript Debug.SpiritPleasure" />
     </list>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -238,6 +220,7 @@
       <workItem from="1713034989269" duration="9863000" />
       <workItem from="1713247694611" duration="131000" />
       <workItem from="1713277127152" duration="416000" />
+      <workItem from="1714110218007" duration="7293000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -407,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713044172173</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Push 0:35 14.04">
+      <option name="closed" value="true" />
+      <created>1714306133477</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1714306133477</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
