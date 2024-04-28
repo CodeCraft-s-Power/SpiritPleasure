@@ -1,3 +1,4 @@
+/* BottNavBar.css */
 @font-face {
     font-family: 'Cooper Black';
     src: url('../assets/COOPBL.TTF') ;
@@ -17,7 +18,7 @@
     color: rgba(49, 36, 30, 1);
     border-bottom: 2px solid black;
     width: 1300px;
-    margin-left: 50px;
+    margin-left: 70px;
 
     margin-right: 80px;
 }
@@ -26,7 +27,7 @@
 }
 
 #li-text{
-    margin-top: 60px;
+    margin-top: 30px;
     width: 444px;
     margin-right: 300px;
     color:  rgba(69, 89, 11, 1);
@@ -43,7 +44,7 @@
 .custom-span2{
     font-family: "Kurale";
     font-size:30px ;
-    margin-left:50px ;
+    margin-left:50px;
 }
 
 .menu{
@@ -52,7 +53,7 @@
     line-height: 32px;
     text-align: center;
     font-size: 26px;
-    margin-top: 103px;
+    margin-top: 70px;
     width: 400px;
     height: 41px;
     margin-left: 25px;
@@ -64,7 +65,7 @@
     line-height: 35px;
     text-align: center;
     font-size: 34px;
-    margin-top: 103px;
+    margin-top: 65px;
     width: 400px;
     height: 41px;
     margin-left: 25px;

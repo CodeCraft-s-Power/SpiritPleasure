@@ -1,17 +1,21 @@
+//Find.js
 import React, { Component } from 'react';
 import './Find.css'
 import BottNavBar from "./BottNavBar";
 import SideBar from "./SideBar";
-import BottomNavBar from "../HomeComponents/BottomNavBar";
-import TopNavBar from "../HomeComponents/TopNavBar";
+import CenterPart from "./CenterPart";
+import ButtonBar from "./ButtonBar";
 
 class Find extends Component {
     render() {
         return (
             <div>
-                <TopNavBar/>
-                <BottomNavBar />
-                <SideBar/>
+                <BottNavBar/>
+                <div className="center">
+                    <SideBar/>
+                <CenterPart/>
+                </div>
+                <ButtonBar/>
             </div>
         );
     }
