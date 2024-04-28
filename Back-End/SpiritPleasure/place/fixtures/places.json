@@ -20,15 +20,44 @@
         }
     },
     {
+        "model": "place.image",
+        "pk": 1,
+        "fields": {
+            "image": "place_images/example_image1.jpg"
+        }
+    },
+    {
+        "model": "place.image",
+        "pk": 2,
+        "fields": {
+            "image": "place_images/example_image2.jpg"
+        }
+    },
+    {
         "model": "place.place",
         "pk": 1,
         "fields": {
             "name": "Example Place",
             "description": "This is an example place",
-            "image": null,
             "location": 1,
             "relaxation_type": "SPA",
             "trip_goal": "Розслабитися"
+        }
+    },
+    {
+        "model": "place.Image",
+        "pk": 1,
+        "fields": {
+            "place": [1],
+            "image": "place_images/example_image1.jpg"
+        }
+    },
+    {
+        "model": "place.Image",
+        "pk": 2,
+        "fields": {
+            "place": [1],
+            "image": "place_images/example_image2.jpg"
         }
     }
 ]

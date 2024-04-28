@@ -27,6 +27,13 @@ class TripGoal(models.TextChoices):
     SKIING = 'Покататись на лижах'
     WALK_CITY = 'Погуляти містом'
 
+class Image(models.Model):
+    image = models.ImageField(upload_to='place_images/', blank=True, null=True)
+    place = models.ManyToManyField('Place', related_name='images')
+
+    def __str__(self):
+        return self.image.url if self.image else ''
+
 class Address(models.Model):
     street = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
@@ -39,13 +46,14 @@ class Address(models.Model):
 class Place(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='place_images/', blank=True, null=True)
+    image = models.ManyToManyField('Image', related_name='places')
     location = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, default=None)
     relaxation_type = models.CharField(max_length=30, choices=RelaxationType.choices, null=True, blank=True)
     trip_goal = models.CharField(max_length=50, choices=TripGoal.choices, null=True, blank=True)
 
     def __str__(self):
         return self.name
+
 
 class History(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
