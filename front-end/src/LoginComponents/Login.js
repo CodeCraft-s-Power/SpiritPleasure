@@ -34,7 +34,7 @@ class Login extends Component {
                             </label>
                             <div className="top-text1">
                                 <h1 className="Login">LOGIN</h1>
-                                <h2 className="subtitle1"> Don't have an account? <a target="" href="" className="subtitle-text"> Create new account </a>
+                                <h2 className="subtitle1"> Don't have an account? <a target="" href="/registration" className="subtitle-text"> Create new account </a>
                                 </h2>
                             </div>
                         </div>

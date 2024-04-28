@@ -316,3 +316,11 @@ input[type="checkbox"]:checked + .slider-toggle:before {
   }
 
 }
+
+.error-message{
+  margin-top: 40px;
+  color: red;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  src: url('../src/assets/Montserrat-Italic-VariableFont_wght.ttf')  ;
+}
