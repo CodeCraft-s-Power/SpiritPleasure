@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'rest_framework',
     'place',
+    'corsheaders',
     'authentication.apps.AuthenticationConfig',
     'rest_framework.authtoken',
     'django.contrib.admin',
@@ -54,6 +55,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
 ]
 
 ROOT_URLCONF = 'SpiritPleasure.urls'
@@ -82,10 +88,10 @@ WSGI_APPLICATION = 'SpiritPleasure.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'spiritpleasure',
+        'NAME': 'SpiritPleasure',
         'USER': 'backendmanager',
         'PASSWORD': 'sleep-eat-code-repeat',
-        'HOST': 'localhost',#'db',
+        'HOST': 'db',
         'PORT': '3306',
         'default-character-set': 'utf8',
     },
