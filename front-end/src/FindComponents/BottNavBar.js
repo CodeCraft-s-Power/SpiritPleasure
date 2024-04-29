@@ -1,3 +1,4 @@
+//BottNavBar.js
 import React, {Component} from 'react';
 import "./BottNavBar.css"
 class BottNavBar extends Component {
