@@ -20,6 +20,7 @@ class PlaceSerializer(serializers.ModelSerializer):
     relaxation_type = serializers.ChoiceField(choices=RelaxationType.choices)
     trip_goal = serializers.ChoiceField(choices=TripGoal.choices)
     images = ImageSerializer(many=True, required=False)
+
     class Meta:
         model = Place
         fields = ['id', 'name', 'description', 'images', 'location', 'relaxation_type', 'trip_goal']
@@ -50,10 +51,8 @@ class PlaceSerializer(serializers.ModelSerializer):
 
         return instance
 
-class HistorySerializer(serializers.ModelSerializer):
-    user = serializers.PrimaryKeyRelatedField(queryset=User.objects.all())
-    place = serializers.PrimaryKeyRelatedField(queryset=Place.objects.all())
 
+class HistorySerializer(serializers.ModelSerializer):
     class Meta:
         model = History
-        fields = ['id', 'user', 'place', 'is_favorite']
+        fields = ['id', 'token', 'place', 'is_favorite']

@@ -34,11 +34,9 @@ class AddressViewSet(viewsets.ModelViewSet):
     serializer_class = AddressSerializer
 
 
-class HistoryListView(APIView):
-    def get(self, request, *args, **kwargs):
-        queryset = History.objects.all()
-        serializer = HistorySerializer(queryset, many=True)
-        return Response(serializer.data)
+class HistoryViewSet(viewsets.ModelViewSet):
+    queryset = History.objects.all()
+    serializer_class = HistorySerializer
 
 
 class ImageViewSet(viewsets.ModelViewSet):

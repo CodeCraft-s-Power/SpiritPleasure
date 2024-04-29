@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
+
 class RelaxationType(models.TextChoices):
     FAMILY = 'Сімейний'
     YOUTH = 'Молодіжний'
@@ -55,10 +57,18 @@ class Place(models.Model):
         return self.name
 
 
+
+
 class History(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    token = models.ForeignKey(Token, on_delete=models.CASCADE)
     place = models.ForeignKey(Place, on_delete=models.CASCADE)
     is_favorite = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"History for {self.user.username}: {self.place.name}, Favorite: {self.is_favorite}"
+        return f"History for {self.token.user.username}: {self.place.name}, Favorite: {self.is_favorite}"
+
+    @classmethod
+    def create_with_token(cls, token, place, is_favorite=False):
+        user = token.user
+        history = cls.objects.create(token=token, place=place, is_favorite=is_favorite)
+        return history
