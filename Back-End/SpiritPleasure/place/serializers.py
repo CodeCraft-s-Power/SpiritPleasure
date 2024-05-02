@@ -23,7 +23,7 @@ class PlaceSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Place
-        fields = ['id', 'name', 'description', 'images', 'location', 'relaxation_type', 'trip_goal']
+        fields = ['id', 'name', 'description', 'images', 'location', 'relaxation_type', 'trip_goal', 'with_food', 'with_sleep']
         read_only_fields = ['id']
 
     def create(self, validated_data):
@@ -41,6 +41,8 @@ class PlaceSerializer(serializers.ModelSerializer):
         instance.location = validated_data.get('location', instance.location)
         instance.relaxation_type = validated_data.get('relaxation_type', instance.relaxation_type)
         instance.trip_goal = validated_data.get('trip_goal', instance.trip_goal)
+        instance.with_food = validated_data.get('with_food', instance.with_food)
+        instance.with_sleep = validated_data.get('with_sleep', instance.with_sleep)
         instance.save()
 
         images_data = self.context.get('request').FILES.getlist('images')
@@ -52,7 +54,9 @@ class PlaceSerializer(serializers.ModelSerializer):
         return instance
 
 
+
+
 class HistorySerializer(serializers.ModelSerializer):
     class Meta:
         model = History
-        fields = ['id', 'token', 'place', 'is_favorite']
+        fields = ['id', 'user', 'place', 'is_favorite']

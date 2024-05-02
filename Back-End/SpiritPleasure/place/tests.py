@@ -43,10 +43,7 @@ class PlaceHistoryTestCase(TestCase):
             location=address
         )
 
-        history = History.objects.create(
-            user=user,
-            place=place
-        )
+        history = History.create_with_user(user, place)
 
         self.assertEqual(history.user, user)
         self.assertEqual(history.place, place)

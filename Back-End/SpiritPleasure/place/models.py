@@ -52,6 +52,8 @@ class Place(models.Model):
     location = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, default=None)
     relaxation_type = models.CharField(max_length=30, choices=RelaxationType.choices, null=True, blank=True)
     trip_goal = models.CharField(max_length=50, choices=TripGoal.choices, null=True, blank=True)
+    with_food = models.BooleanField(default=False)
+    with_sleep = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
@@ -60,15 +62,14 @@ class Place(models.Model):
 
 
 class History(models.Model):
-    token = models.ForeignKey(Token, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     place = models.ForeignKey(Place, on_delete=models.CASCADE)
     is_favorite = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"History for {self.token.user.username}: {self.place.name}, Favorite: {self.is_favorite}"
+        return f"History for User {self.user.username}: {self.place.name}, Favorite: {self.is_favorite}"
 
     @classmethod
-    def create_with_token(cls, token, place, is_favorite=False):
-        user = token.user
-        history = cls.objects.create(token=token, place=place, is_favorite=is_favorite)
+    def create_with_user(cls, user, place, is_favorite=False):
+        history = cls.objects.create(user=user, place=place, is_favorite=is_favorite)
         return history
