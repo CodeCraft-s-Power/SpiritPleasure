@@ -8,6 +8,7 @@ import Login from './LoginComponents/Login';
 import BottomNavBar from './HomeComponents/BottomNavBar';
 import TopNavBar from "./HomeComponents/TopNavBar";
 import { ThemeProvider } from './ThemeContext';
+import ReadMoreComponent from "./FindComponents/ReadMoreComponent";
 
 function App() {
     return (
@@ -15,11 +16,12 @@ function App() {
             <Router>
                 <div>
                     <Routes>
-                        <Route path="/" element={<HomePage />} />
+                        <Route path="/" element={<ReadMoreComponent />} />
                         <Route path="/find" element={<Find />} />
                         <Route path="/liked" element={<Liked />} />
                         <Route path="/history" element={<History />} />
                         <Route path="/login" element={<Login />} />
+
                     </Routes>
                 </div>
             </Router>

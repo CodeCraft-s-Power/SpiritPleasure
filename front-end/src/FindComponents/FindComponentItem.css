@@ -1,0 +1,43 @@
+.FirstItem{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 290px;
+    height: 290px;
+    background-image: url("../img/Rectangle 5.png");
+    background-repeat: no-repeat;
+    background-size: cover; /* це забезпечить, щоб фон заповнив всю площу контейнера */
+    background-position: center; /* це вирівняє фон по центру контейнера */
+    border-radius: 15px;
+}
+
+.LikeButton {
+    margin-top: 10px;
+    margin-left: 220px;
+    width: 60px;
+    height: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/Vector.png");
+    border: none;
+    cursor: pointer;
+    transition: filter 0.7s ease;
+}
+
+.LikeButton:hover {
+    filter: brightness(0) invert(1);
+}
+
+
+.UnderItmeText{
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+
+.UnderItmeText1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
