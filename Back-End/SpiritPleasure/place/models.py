@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
+from rest_framework.authtoken.models import Token
+
 class RelaxationType(models.TextChoices):
     FAMILY = 'Сімейний'
     YOUTH = 'Молодіжний'
@@ -27,6 +29,13 @@ class TripGoal(models.TextChoices):
     SKIING = 'Покататись на лижах'
     WALK_CITY = 'Погуляти містом'
 
+class Image(models.Model):
+    image = models.ImageField(upload_to='place_images/', blank=True, null=True)
+    place = models.ManyToManyField('Place', related_name='images')
+
+    def __str__(self):
+        return self.image.url if self.image else ''
+
 class Address(models.Model):
     street = models.CharField(max_length=100)
     city = models.CharField(max_length=100)
@@ -39,7 +48,7 @@ class Address(models.Model):
 class Place(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='place_images/', blank=True, null=True)
+    image = models.ManyToManyField('Image', related_name='places')
     location = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, default=None)
     relaxation_type = models.CharField(max_length=30, choices=RelaxationType.choices, null=True, blank=True)
     trip_goal = models.CharField(max_length=50, choices=TripGoal.choices, null=True, blank=True)
@@ -47,10 +56,19 @@ class Place(models.Model):
     def __str__(self):
         return self.name
 
+
+
+
 class History(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    token = models.ForeignKey(Token, on_delete=models.CASCADE)
     place = models.ForeignKey(Place, on_delete=models.CASCADE)
     is_favorite = models.BooleanField(default=False)
 
     def __str__(self):
-        return f"History for {self.user.username}: {self.place.name}, Favorite: {self.is_favorite}"
+        return f"History for {self.token.user.username}: {self.place.name}, Favorite: {self.is_favorite}"
+
+    @classmethod
+    def create_with_token(cls, token, place, is_favorite=False):
+        user = token.user
+        history = cls.objects.create(token=token, place=place, is_favorite=is_favorite)
+        return history

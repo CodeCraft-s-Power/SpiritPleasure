@@ -223,7 +223,7 @@ label {
   content: "";
   height: 20px;
   width: 20px;
-  left: 3px;
+  left: 50px;
   bottom: 3px;
   background-color: white;
   -webkit-transition: .4s;
@@ -245,8 +245,8 @@ input[type="checkbox"]:checked + .slider-toggle:before {
   width: 575.73px;
   height: 147.01px;
   margin-top: 5px;
-  margin-left: 30px;
-  margin-right: 70px;
+  margin-left: 220px;
+  margin-right: 200px;
   font-family: 'Cooper Black', sans-serif;
   font-weight: 400;
   font-size: 50px;
@@ -258,7 +258,7 @@ input[type="checkbox"]:checked + .slider-toggle:before {
 .subtitle {
   width: 522.55px;
   height: 40px;
-  margin-left: 63px;
+  margin-left: 250px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 501;
@@ -284,18 +284,43 @@ input[type="checkbox"]:checked + .slider-toggle:before {
 
 @media screen and (max-width: 768px) {
   .container {
+    display: compact;
     flex-direction: column-reverse;
   }
-  .left-pane {
-    height: 25%;
+  .left-pane{
+    width: 0;
+    display: none;
   }
-  .right-pane {
-    height: 75%;
+  .logo-left-pane{
+    width: 0;
+    height: 0;
+    display: none;
   }
-  .top-right {
+  .right-pane{
+    width: 100%;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
   }
-  .bottom-right {
-    justify-content: center;
+  .Create-New-Account{
+    width: 250px;
+    height: 200px;
+    margin-top: 75px;
+    margin-left: 330px;
   }
+  .subtitle{
+    width: 600px;
+    height: 100px;
+    margin-top: 5px;
+    margin-left: 150px;
+  }
+
+}
+
+.error-message{
+  margin-top: 40px;
+  color: red;
+  font-size: 25px;
+  font-family: 'Montserrat';
+  src: url('../src/assets/Montserrat-Italic-VariableFont_wght.ttf')  ;
 }

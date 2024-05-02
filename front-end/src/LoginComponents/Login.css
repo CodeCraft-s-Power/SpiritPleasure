@@ -30,8 +30,8 @@
     height: 100vh;
 }
 
-.left-pane,
-.right-pane {
+.left-pane1,
+.right-pane1 {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -39,14 +39,14 @@
     flex-direction: column;
 }
 
-.left-pane {
+.left-pane1 {
     background-image: url('../img/background (1).png');
     background-size: cover;
     background-position: center;
 }
 
 
-.logo-left-pane{
+.logo-left-pane1{
     width: 426.58px;
     height: 354.73px;
     background-size: contain;
@@ -60,24 +60,24 @@
 }
 
 
-.right-pane{
+.right-pane1{
     justify-content: space-between;
 }
 
 
-.top-right,
-.bottom-right{
+.top-right1,
+.bottom-right1{
     width: 100%;
 }
 
-.top-right {
+.top-right1 {
     height: 30%;
     border-bottom: 2px solid black;
     display: flex;
     justify-content: flex-end;
 }
 
-.bottom-right {
+.bottom-right1 {
     height: 70%;
     position: relative;
     display: flex;
@@ -89,7 +89,7 @@
 
 
 
-.input-group{
+.input-group1{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -103,7 +103,7 @@ label {
     margin-right: 5px;
 }
 
-#password,#name{
+#password1,#name1{
     border-radius:50.35px;
     padding: 5px;
     border: none;
@@ -116,14 +116,14 @@ label {
 
 
 
-.Name,.Password{
+.Name1,.Password1{
     font-size: 21px;
     font-family: "Montserrat", sans-serif;
 }
 
 
 
-.logo-text{
+.logo-text1{
     font-size: 70px;
     color: rgba(69, 89, 11, 1);
     margin-top: 290px;
@@ -131,7 +131,7 @@ label {
 
 }
 
-.logo-text2{
+.logo-text21{
     font-size: 40px;
     color: rgba(134, 161, 53, 1);
     font-family: "Kurale", serif;
@@ -177,52 +177,51 @@ label {
 }
 
 
-.dark-theme .left-pane {
+.dark-theme .left-pane1 {
     background-image: url('../img/fon.png'); /* Фотографія для темної теми */
 }
 
-.dark-theme .logo-text{
+.dark-theme .logo-text1{
     color: rgba(200, 219, 190, 1);
 }
 
-.dark-theme .logo-left-pane {
+.dark-theme .logo-left-pane1 {
     background-image: url('../img/logo.dark.png');
 }
-.dark-theme .logo-text2{
+.dark-theme .logo-text21{
     color:rgba(232, 232, 232, 1);
 }
 
-.dark-theme .top-right{
+.dark-theme .top-right1{
     border-bottom: 2px solid rgba(245, 245, 245, 1) ;
 }
 
-.dark-theme .Create-Account-button{
+.dark-theme .Login-button{
     background-color:  rgba(134, 161, 53, 1);
 ;
 }
 
 
-.dark-theme #password,
-.dark-theme #name,
-.dark-theme #email {
+.dark-theme #password1,
+.dark-theme #name1{
     background-color: rgba(69, 89, 11, 1);
     color:  rgba(255, 255, 255, 0.5);
 }
 
-.slider {
+.slider0 {
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 1px;
     position: relative;
     display: inline-block;
     width: 50px;
     height: 26px;
 }
 
-.slider input[type="checkbox"] {
+.slider0 input[type="checkbox"] {
     display: none;
 }
 
-.slider-toggle {
+.slider-toggle0 {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -236,7 +235,7 @@ label {
     border-radius: 26px;
 }
 
-.slider-toggle:before {
+.slider-toggle0:before {
     position: absolute;
     content: "";
     height: 20px;
@@ -249,12 +248,12 @@ label {
     border-radius: 50%;
 }
 
-input[type="checkbox"]:checked + .slider-toggle {
+input[type="checkbox"]:checked + .slider-toggle0 {
     background-color:  rgba(209, 200, 193, 1);
 ;
 }
 
-input[type="checkbox"]:checked + .slider-toggle:before {
+input[type="checkbox"]:checked + .slider-toggle0:before {
     -webkit-transform: translateX(22px);
     -ms-transform: translateX(22px);
     transform: translateX(22px);
@@ -263,9 +262,9 @@ input[type="checkbox"]:checked + .slider-toggle:before {
 .Login {
     width: 575.73px;
     height: 147.01px;
-    margin-top: 40px;
+    margin-top: 90px;
     margin-left: 45px;
-    margin-right: 75px;
+    margin-right: 200px;
     font-family: 'Cooper Black', sans-serif;
     font-weight: 500;
     font-size: 60px;
@@ -275,10 +274,10 @@ input[type="checkbox"]:checked + .slider-toggle:before {
 
 }
 
-.subtitle{
-    width: 522.55px;
+.subtitle1{
+    width: 600px;
     height: 40px;
-    margin-left: 63px;
+    margin-left: 60px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 501;
@@ -289,7 +288,7 @@ input[type="checkbox"]:checked + .slider-toggle:before {
 }
 
 
-.dark-theme .subtitle{
+.dark-theme .subtitle1{
     color: rgba(217, 217, 217, 1);
 }
 
@@ -298,7 +297,18 @@ input[type="checkbox"]:checked + .slider-toggle:before {
     color: rgba(71, 193, 220, 1);
     text-decoration: none;
 }
-.login-text{
+.subtitle-text{
     color: rgba(71, 193, 220, 1);
     text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+    .left-pane1{
+        display: none;
+
+    }
+    .logo-left-pane1{
+        height: 30%;
+
+
+    }
 }

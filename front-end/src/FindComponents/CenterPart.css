@@ -1,0 +1,12 @@
+/* CenterPart.css */
+.img-ex{
+    background-image: url("../img/1st_block.png");
+    background-size: cover;
+    width: 300px; /* Змініть розміри за бажанням */
+    height: 300px;  /* Спробуйте видалити це, щоб відображення працювало */
+    margin-top: 20px; /* Змінивши маржу вище */
+    margin-left: 25px; /* Змініть розміщення по горизонталі за бажанням */
+    border-radius: 35px;
+
+}
+
