@@ -8,6 +8,8 @@ class MainImage extends Component {
                 <div className="main-image">
                     <div className="main-image-text-container">
                         <div> <span className="main-image-text">Обери місце, до якого <br/> лежить душа</span></div>
+                        <div className="logot"> SpiritPleasure</div>
+                        <div className="logot-bott"> Насолодись Україною</div>
                     </div>
                 </div>
             </div>

@@ -36,3 +36,29 @@
     font-family: 'Montserrat Alternates';
 
 }
+.logot{
+    display: none;
+}
+.logot-bott{
+    display: none;
+}
+
+@media screen and (max-width: 738px){
+    .main-image {
+        background-image: url("../img/main.mob.png");
+        width: 500px;
+        margin-top: -120px;
+        height: 73px;
+        border-bottom: 1px solid;
+        border-radius: 0;
+    }
+    .main-image-text-container{
+        display: none;
+    }
+   /* .logot{
+        display: flex;
+        background: rgba(69, 89, 11, 1);
+        width: 237px;
+        height: 43px;
+    }*/
+}

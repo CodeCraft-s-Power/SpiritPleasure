@@ -33,3 +33,37 @@
     font-weight: bold;
     font-family:Montserrat ;
 }
+
+@media screen and (max-width: 700px) {
+    .container {
+        display: compact;
+        flex-direction: column-reverse;
+    }
+    .text{
+        width: 350px;
+        height: 500px;
+        font-size: 25px;
+        color: rgba(69, 89, 11, 1);
+        text-align: center;
+       margin-left: 40px;
+    }
+    .twoItems{
+        display: compact;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 110px;
+        margin-top: 10px;
+    }
+    .goButton{
+        width: 170px;
+        height: 43px;
+        border-radius: 20px;
+        border: none;
+        background: rgba(69, 89, 11, 1);
+        color:  rgba(245, 245, 245, 1);
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 130px;
+        margin-top: -40px;
+    }
+}
