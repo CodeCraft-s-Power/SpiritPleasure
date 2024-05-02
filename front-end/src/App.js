@@ -16,11 +16,12 @@ function App() {
             <Router>
                 <div>
                     <Routes>
-                        <Route path="/" element={<ReadMoreComponent />} />
+                        <Route path="/" element={<HomePage />} />
                         <Route path="/find" element={<Find />} />
                         <Route path="/liked" element={<Liked />} />
                         <Route path="/history" element={<History />} />
                         <Route path="/login" element={<Login />} />
+                        <Route path="/read-more" element={<ReadMoreComponent />}/>
 
                     </Routes>
                 </div>
