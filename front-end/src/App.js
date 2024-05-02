@@ -9,6 +9,7 @@ import BottomNavBar from './HomeComponents/BottomNavBar';
 import TopNavBar from "./HomeComponents/TopNavBar";
 import { ThemeProvider } from './ThemeContext';
 import ReadMoreComponent from "./FindComponents/ReadMoreComponent";
+import Registration from "./Registration";
 
 function App() {
     return (
@@ -16,12 +17,12 @@ function App() {
             <Router>
                 <div>
                     <Routes>
-                        <Route path="/" element={<ReadMoreComponent />} />
+                       <Route path="/" element={<HomePage />} />
                         <Route path="/find" element={<Find />} />
                         <Route path="/liked" element={<Liked />} />
                         <Route path="/history" element={<History />} />
                         <Route path="/login" element={<Login />} />
-
+                        <Route path="/registration" element={<Registration />} />
                     </Routes>
                 </div>
             </Router>
