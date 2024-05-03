@@ -5,6 +5,7 @@ import SideBar from "./SideBar";
 import BottomNavBar from "../HomeComponents/BottomNavBar";
 import TopNavBar from "../HomeComponents/TopNavBar";
 import FindComponentItem from "./FindComponentItem";
+import CenterPart from "./CenterPart";
 
 class Find extends Component {
     render() {
@@ -14,6 +15,7 @@ class Find extends Component {
                 <BottomNavBar />
                 <div className="MainFind">
                 <SideBar/>
+                    <CenterPart/>
                 <FindComponentItem/>
                 </div>
             </div>

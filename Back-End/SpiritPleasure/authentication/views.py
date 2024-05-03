@@ -1,5 +1,5 @@
 from rest_framework.views import APIView
-from .serializers import TokenSerializer
+from .serializers import TokenSerializer, UserPublicSerializer
 from rest_framework.authtoken.models import Token
 from rest_framework import viewsets
 from rest_framework.response import Response
@@ -17,9 +17,13 @@ class LoginView(APIView):
         if user is not None:
             # Check if token already exists
             token, _ = Token.objects.get_or_create(user=user)
+
+            # Serialize token
             serializer = TokenSerializer(data={'token': token.key})
             serializer.is_valid()
-            return Response(serializer.data, status=status.HTTP_200_OK)
+
+            # Return token data along with user id
+            return Response({'token': token.key, 'user_id': user.id}, status=status.HTTP_200_OK)
         else:
             return Response({'error': 'Invalid credentials'}, status=status.HTTP_401_UNAUTHORIZED)
 

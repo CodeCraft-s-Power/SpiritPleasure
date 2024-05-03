@@ -12,7 +12,6 @@ function ReadMoreComponent(props) {
             <ReadMoreComponentsBottomNavBar/>
             <ReadMoreMainPhoto/>
             <ReadMoreInfoText/>
-
         </div>
     );
 }
