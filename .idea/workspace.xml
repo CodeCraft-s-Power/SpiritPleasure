@@ -4,29 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="delete: search&amp;filter">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="fix: place &amp; address">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/migrations/0002_delete_customuser.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0002_alter_place_location.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0003_alter_place_location.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0004_alter_place_location.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0005_alter_place_location.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0006_alter_place_location.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_place_relaxation_type_place_trip_goal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0008_history.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0009_history_is_favorite.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,8 +20,8 @@
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="JSX File" />
-        <option value="Python Script" />
         <option value="package.json" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -256,7 +235,20 @@
       <workItem from="1713894661591" duration="4341000" />
       <workItem from="1713901025947" duration="447000" />
       <workItem from="1713901832079" duration="743000" />
-      <workItem from="1714055025569" duration="7062000" />
+      <workItem from="1714055025569" duration="9568000" />
+      <workItem from="1714065991703" duration="187000" />
+      <workItem from="1714239671623" duration="1755000" />
+      <workItem from="1714318332693" duration="125000" />
+      <workItem from="1714398699339" duration="1799000" />
+      <workItem from="1714400723591" duration="202000" />
+      <workItem from="1714400957764" duration="602000" />
+      <workItem from="1714402100862" duration="14000" />
+      <workItem from="1714402459041" duration="672000" />
+      <workItem from="1714407584257" duration="190000" />
+      <workItem from="1714658793844" duration="4997000" />
+      <workItem from="1714674630596" duration="778000" />
+      <workItem from="1714715561921" duration="681000" />
+      <workItem from="1714757555511" duration="4574000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -466,7 +458,79 @@
       <option name="project" value="LOCAL" />
       <updated>1713901131592</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="very bad!">
+      <option name="closed" value="true" />
+      <created>1714062397061</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1714062397062</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add: image model">
+      <option name="closed" value="true" />
+      <created>1714239881761</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1714239881761</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fix: images">
+      <option name="closed" value="true" />
+      <created>1714241243393</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1714241243393</updated>
+    </task>
+    <task id="LOCAL-00030" summary="fix: history &amp; url">
+      <option name="closed" value="true" />
+      <created>1714400486175</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1714400486175</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fix: history &amp; url">
+      <option name="closed" value="true" />
+      <created>1714402704906</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1714402704906</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix: history &amp; place">
+      <option name="closed" value="true" />
+      <created>1714664413967</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1714664413967</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix: place image field">
+      <option name="closed" value="true" />
+      <created>1714759700093</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1714759700093</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix: place image field">
+      <option name="closed" value="true" />
+      <created>1714759835342</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1714759835342</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fix: place &amp; address">
+      <option name="closed" value="true" />
+      <created>1714763419046</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1714763419046</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,7 +587,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="origin/Dev" />
                       </list>
                     </value>
                   </entry>
@@ -554,7 +618,14 @@
     <MESSAGE value="add: favorite &amp; historyURL" />
     <MESSAGE value="update" />
     <MESSAGE value="delete: search&amp;filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete: search&amp;filter" />
+    <MESSAGE value="very bad!" />
+    <MESSAGE value="add: image model" />
+    <MESSAGE value="fix: images" />
+    <MESSAGE value="fix: history &amp; url" />
+    <MESSAGE value="fix: history &amp; place" />
+    <MESSAGE value="fix: place image field" />
+    <MESSAGE value="fix: place &amp; address" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: place &amp; address" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />

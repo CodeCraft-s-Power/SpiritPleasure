@@ -20,6 +20,7 @@ class PlaceSerializer(serializers.ModelSerializer):
     relaxation_type = serializers.ChoiceField(choices=RelaxationType.choices)
     trip_goal = serializers.ChoiceField(choices=TripGoal.choices)
     images = ImageSerializer(many=True, required=False)
+    location = AddressSerializer()
 
     class Meta:
         model = Place
