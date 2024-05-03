@@ -48,7 +48,7 @@ class Address(models.Model):
 class Place(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ManyToManyField('Image', related_name='places')
+    image = models.ManyToManyField('Image', related_name='places', blank=True, null=True, default=None)
     location = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, default=None)
     relaxation_type = models.CharField(max_length=30, choices=RelaxationType.choices, null=True, blank=True)
     trip_goal = models.CharField(max_length=50, choices=TripGoal.choices, null=True, blank=True)
