@@ -33,6 +33,7 @@ const CenterPart = () => {
                     <FindComponentItem
                         id={place.id}
                         name={place.name}
+                        description={place.description}
                         city={place.city}
                         // Перевірка наявності зображення перед отриманням URL
                         image={place.images.length > 0 ? place.images[0].image : null}

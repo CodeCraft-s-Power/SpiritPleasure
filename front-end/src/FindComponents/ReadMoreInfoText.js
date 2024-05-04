@@ -1,8 +1,8 @@
 import React from 'react';
 import './ReadMoreInfoText.css';
 
-function ReadMoreInfoText(props) {
-    const { id, name, description } = props;
+function ReadMoreInfoText({props, id, name, description}) {
+    console.log(id, name, description)
 
     return (
         <div className="Main" key={id}>

@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './FindComponentItem.css';
-import ReadMoreInfoText from "./ReadMoreInfoText";
+import ReadMoreComponent from "./ReadMoreComponent";
 
 function FindComponentItem({ name, city, image, id, description }) {
-    const handleClick = () => {
-        const routeState = { id, name, description };
-        return { state: routeState };
-    };
+    const [state, setState] = useState({ id, name, description });
+    console.log(state)
+
+    useEffect(() => {
+        setState(state);
+    }, []);
 
     return (
-        <div key={id}>
+        <div key={id} >
             {/* Обробник натискання для показу ReadMoreInfoText */}
-            <NavLink to="/read-more" onClick={handleClick}>
+            <NavLink to={"/read-more/"} state={{state}}>
                 <div className="FirstItem" style={{ backgroundImage: `url(${image})` }}>
                     <button className="LikeButton"></button>
                 </div>
@@ -26,4 +28,4 @@ function FindComponentItem({ name, city, image, id, description }) {
     );
 }
 
-export default FindComponentItem
+export default FindComponentItem;

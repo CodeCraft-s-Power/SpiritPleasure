@@ -371,3 +371,11 @@ input[type="checkbox"]:checked + .slider-toggle0:before {
     }
 
 }
+
+.error-message{
+    margin-top: 40px;
+    color: red;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    src: url('../assets/Montserrat-Italic-VariableFont_wght.ttf')  ;
+}

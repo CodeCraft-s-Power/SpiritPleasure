@@ -1,12 +1,16 @@
-import React, {Component} from 'react';
-
+import React, { Component } from 'react';
+import {Navigate, NavLink} from "react-router-dom";
+import { UserContext } from '../UserContext'; // Якщо ваш контекст експортується як UserContext
 import './Login.css';
-
 class Login extends Component {
+    static contextType = UserContext; // Встановлюємо тип контексту
+
     constructor(props) {
         super(props);
         this.state = {
-            isDarkMode: false
+            isDarkMode: false,
+            errorMessage: '',
+            redirectToHome: false,
         };
     }
 
@@ -16,8 +20,49 @@ class Login extends Component {
         }));
     };
 
+    userLogin = async () => {
+        const user_name = document.getElementById("name")
+        const user_password = document.getElementById("password")
+
+        let userdata = {
+            username: user_name.value,
+            password: user_password.value
+        }
+
+        try{
+            const response = await fetch('http://127.0.0.1:8000/login/', {
+                method: "POST",
+                body: JSON.stringify(userdata),
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            })
+
+            if (response.ok){
+                const data = await response.json();
+
+                // Отримуємо функції з контексту
+                const { setUserId, setIsLoggedIn } = this.context;
+
+                // Встановлюємо стани через функції з контексту
+                setUserId(data.user_id);
+                setIsLoggedIn(true);
+
+                this.setState({ redirectToHome: true });
+                console.log("Successfully logged in", data.user_id);
+            }
+            else {
+                console.log("Login failed");
+                throw new Error("Failed to log in!");
+            }
+        }
+        catch(error){
+            this.setState({ errorMessage: error.message });
+        }
+    }
+
     render() {
-        const {isDarkMode} = this.state;
+        const { isDarkMode, errorMessage } = this.state;
         return (
             <div>
                 <div className={`container ${isDarkMode ? 'dark-theme' : ''}`}>
@@ -47,7 +92,9 @@ class Login extends Component {
                                 <label className="Password1" htmlFor="password">Password</label>
                                 <input type="password" id="password"/>
                             </div>
-                            <button className="Login-button">Login</button>
+                            <button className="Login-button" onClick={this.userLogin}>Login</button>
+                            {this.state.redirectToHome && <Navigate to="/" />}
+                            {errorMessage && <p className="error-message">{errorMessage}</p>}
                         </div>
                     </div>
                 </div>
