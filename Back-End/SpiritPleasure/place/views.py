@@ -21,18 +21,6 @@ class PlaceViewSet(viewsets.ModelViewSet):
     queryset = Place.objects.all()
     serializer_class = PlaceSerializer
 
-    def remove_image(self, request, pk=None):
-        place = self.get_object()
-        image_id = request.data.get('image_id')
-
-        try:
-            image = Image.objects.get(pk=image_id)
-        except Image.DoesNotExist:
-            return Response({"error": "Image does not exist"}, status=status.HTTP_404_NOT_FOUND)
-
-        place.images.remove(image)
-
-        return Response({"message": "Image removed from place"}, status=status.HTTP_200_OK)
 
     def create(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
