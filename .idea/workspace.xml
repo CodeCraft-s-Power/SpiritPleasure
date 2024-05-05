@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="fix: place &amp; address">
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0002_image_place.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0003_place_image.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0005_remove_history_token_history_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0004_remove_history_user_history_token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0006_place_with_food_place_with_sleep.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_alter_place_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0008_alter_image_place_alter_place_image.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,6 +261,9 @@
       <workItem from="1714674630596" duration="778000" />
       <workItem from="1714715561921" duration="681000" />
       <workItem from="1714757555511" duration="4574000" />
+      <workItem from="1714892066404" duration="804000" />
+      <workItem from="1714901496880" duration="568000" />
+      <workItem from="1714909287601" duration="9511000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -530,7 +545,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714763419046</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fix: place &amp; address">
+      <option name="closed" value="true" />
+      <created>1714895249014</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1714895249014</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -570,6 +593,17 @@
             </list>
           </value>
         </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="TAB_STATES">
@@ -588,6 +622,13 @@
                     <value>
                       <list>
                         <option value="origin/Dev" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
                       </list>
                     </value>
                   </entry>
