@@ -1,0 +1,39 @@
+.slide {
+    margin-left: 80px;
+    margin-top: 20px;
+    width: 1750px; /* Розмір слайду */
+    height: 379px; /* Фіксована висота слайду */
+    object-fit: cover; /* Забезпечити, щоб фото зберігало пропорції та повністю заповнювало контейнер */
+    position: absolute; /* Змінив позицію на абсолютну, щоб слайди перекривали один одного */
+    top: 0;
+    left: 0;
+    opacity: 0; /* Початкова прозорість */
+    transition: opacity 0.5s ease; /* Плавний перехід для зміни прозорості */
+}
+
+.slide.active {
+    opacity: 1; /* Показати активне фото */
+}
+
+.slider21 {
+    position: relative;
+    width: 100%; /* Залишити ширину на всю доступну ширину */
+    max-width: 2500px; /* Фіксована максимальна ширина слайдера */
+    height: 500px; /* Збільшити висоту слайдера до 500px або іншого бажаного значення */
+    margin: 0 auto;
+    overflow: hidden; /* Приховати фото, що виходять за межі контейнера */
+}
+
+
+.slide.change {
+    animation: fadeIn 0.5s ease; /* Додайте анімацію fadeIn для нової картинки */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

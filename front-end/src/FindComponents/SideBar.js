@@ -106,6 +106,9 @@ class SideBar extends Component {
                            checked={this.state.selectedOptions.checkbox2} />
                     <label htmlFor="checkbox2" className="checkbox-label">З можливістю лишатись наніч?</label>
                 </div>
+                <div>
+                    <button className="Find-button">Пошук</button>
+                </div>
             </div>
         );
     }
