@@ -12,7 +12,9 @@ class ReadMoreComponentsBottomNavBar extends Component {
                         <br/>
                         <span className='custom-span2'> насолодись Україною</span>
                     </li>
+                    <NavLink to={"/find"}>
                     <button className="CircleButton" ></button>
+                    </NavLink>
                     <div className="ItemNameContainer">Тунель кохання</div>
                     <button className="HeartButton"></button>
                 </ul>

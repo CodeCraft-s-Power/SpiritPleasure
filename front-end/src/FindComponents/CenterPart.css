@@ -10,3 +10,29 @@
 
 }
 
+
+
+.center-part1 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.center-part1 > * {
+    flex-basis: calc(25% - 10px);
+    max-width: calc(25% - 10px);
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+
+.center-part1 > :nth-child(4n) {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+

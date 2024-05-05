@@ -33,7 +33,7 @@ class ReadMoreMainPhoto extends Component {
         const { currentSlide, slides } = this.state;
 
         return (
-            <div className="slider-container">
+            <div className="slider-container1">
                 <div className="slider21">
                     {slides.map((slide, index) => (
                         <img

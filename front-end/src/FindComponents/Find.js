@@ -16,8 +16,9 @@ class Find extends Component {
                 <BottomNavBar />
                 <div className="MainFind">
                 <SideBar/>
+                    <div className="MainFind1">
                     <CenterPart/>
-                <FindComponentItem/>
+                    </div>
                 </div>
 
             </div>

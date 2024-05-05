@@ -1,4 +1,6 @@
-import React, { createContext, useState, useContext } from 'react';
+// App.jsx
+
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './HomeComponents/HomePage';
 import Find from './FindComponents/Find';
@@ -12,6 +14,7 @@ import ReadMoreComponent from "./FindComponents/ReadMoreComponent";
 import Registration from "./Registration";
 import { UserProvider } from './UserContext';
 import Logout from "./Logout Components/Logout";
+
 function App() {
     return (
         <UserProvider>
@@ -21,12 +24,12 @@ function App() {
                         <Routes>
                             <Route path="/" element={<HomePage />} />
                             <Route path="/find" element={<Find />} />
-                            <Route path="/liked" element={<Liked />} />
+                            <Route path="/liked/*" element={<Liked />} /> {/* Змініть шлях для Liked на "/liked/*" */}
                             <Route path="/history" element={<History />} />
-                            <Route path="/login" element={<Login />}/>
-                            <Route path="/login" element={<Logout />}/>
-                            <Route path="/read-more/" element={<ReadMoreComponent />} />
-                            <Route path="/registration" element={<Registration />}/>
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/logout" element={<Logout />} />
+                            <Route path="/read-more/:id" element={<ReadMoreComponent />} /> {/* Змініть шлях для ReadMoreComponent */}
+                            <Route path="/registration" element={<Registration />} />
                         </Routes>
                     </div>
                 </Router>

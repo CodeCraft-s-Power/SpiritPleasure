@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import "./CenterPart.css";
 import FindComponentItem from "./FindComponentItem";
 import ReadMoreInfoText from "./ReadMoreInfoText";
+
 const CenterPart = () => {
     const [places, setPlaces] = useState([]);
 
@@ -27,7 +28,7 @@ const CenterPart = () => {
     }, []);
 
     return (
-        <div>
+        <div className="center-part1">
             {places.map(place => (
                 <div key={place.id}>
                     <FindComponentItem
