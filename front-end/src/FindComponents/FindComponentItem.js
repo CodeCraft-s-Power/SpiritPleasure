@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import './FindComponentItem.css';
+import ReadMoreComponent from "./ReadMoreComponent";
 
 function FindComponentItem({ name, city, image, id, description }) {
+    const [state, setState] = useState({ id, name, description });
+    console.log(state)
+
+    useEffect(() => {
+        setState(state);
+    }, []);
+
     return (
-        <div key={id}>
-            <NavLink to={`/liked/${id}`}> {/* Зміна шляху з "/liked" на "/liked/:id" */}
-                <div className="FirstItem">
+        <div key={id} >
+            {/* Обробник натискання для показу ReadMoreInfoText */}
+            <NavLink to={"/read-more/"} state={{state}}>
+                <div className="FirstItem" >
                     <button className="LikeButton"></button>
                 </div>
             </NavLink>
