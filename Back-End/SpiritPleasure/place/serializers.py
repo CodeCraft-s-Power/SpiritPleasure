@@ -1,4 +1,4 @@
-from rest_framework import serializers
+from rest_framework import fields, serializers
 from .models import Place, Address, History, Image
 from .models import RelaxationType, TripGoal
 from django.contrib.auth.models import User
@@ -17,8 +17,8 @@ class ImageSerializer(serializers.ModelSerializer):
 
 
 class PlaceSerializer(serializers.ModelSerializer):
-    relaxation_type = serializers.ChoiceField(choices=RelaxationType.choices)
-    trip_goal = serializers.ChoiceField(choices=TripGoal.choices)
+    relaxation_type = fields.MultipleChoiceField(choices=RelaxationType.choices)
+    trip_goal = fields.MultipleChoiceField(choices=TripGoal.choices)
     images = ImageSerializer(many=True, required=False, read_only=True)
     uploaded_images = serializers.ListField(
         child=serializers.FileField(max_length=200000, allow_empty_file=False, use_url=False, ),

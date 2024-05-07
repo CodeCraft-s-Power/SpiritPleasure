@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from multiselectfield import MultiSelectField
 from rest_framework.authtoken.models import Token
 
 class RelaxationType(models.TextChoices):
@@ -46,13 +47,39 @@ class Address(models.Model):
         return f"{self.street}, {self.city}, {self.region}, {self.postalcode}"
 
 class Place(models.Model):
+    RELAXATIONTYPE = (
+        ('FAMILY', 'Сімейний'),
+        ('YOUTH', 'Молодіжний'),
+        ('MOUNTAIN', 'Гірський'),
+        ('EXTREME', 'Екстримальний'),
+        ('SPA', 'SPA'),
+        ('CALMING', 'Заспокійливий'),
+        ('PASSIVE', 'Пасивний'),
+        ('ACTIVE', 'Активний'),
+        ('WITH_WATER', 'З водоймою'),
+        ('NATURE', 'На природі'),
+        ('COGNITIVE', 'Пізнавальний'),
+        ('WITH_COMPANY', 'З компанією'),
+        ('MEDICAL', 'Лікувально-оздоровчий')
+    )
+    TRIPGOAL = (
+        ('RELAXATION', 'Розслабитися'),
+        ('ENJOY_NATURE', 'Насолодидись природою'),
+        ('MAKE_NICE_PHOTOS', 'Зробити гарні фото'),
+        ('SWIM', 'Поплавати'),
+        ('VISIT_MUSEUMS_CASTLES', 'Відвідати музеї/замки'),
+        ('EAT_TASTY', 'Смачно поїсти'),
+        ('HAVE_FUN_IN_CLUB', 'Розважитися в клубі'),
+        ('LEARN_SOMETHING_NEW', 'Дізнатись щось нове'),
+        ('SKIING', 'Покататись на лижах'),
+        ('WALK_CITY', 'Погуляти містом')
+    )
     name = models.CharField(max_length=100)
     description = models.TextField()
-    #image = models.ImageField(upload_to='place_images/', blank=True, null=True, default='')
     slug = models.SlugField(default="", blank=True)
     location = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, default=None, blank=True)
-    relaxation_type = models.CharField(max_length=30, choices=RelaxationType.choices, null=True, blank=True)
-    trip_goal = models.CharField(max_length=50, choices=TripGoal.choices, null=True, blank=True)
+    relaxation_type = MultiSelectField(max_length=255, max_choices=5, choices=RELAXATIONTYPE, null=True, blank=True)
+    trip_goal = MultiSelectField(max_length=255, max_choices=5, choices=TRIPGOAL, null=True, blank=True)
     with_food = models.BooleanField(default=False)
     with_sleep = models.BooleanField(default=False)
 
