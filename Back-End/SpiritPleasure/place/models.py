@@ -1,3 +1,4 @@
+from geopy.geocoders import Nominatim
 from django.db import models
 from django.contrib.auth.models import User
 from multiselectfield import MultiSelectField
@@ -77,7 +78,8 @@ class Place(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     slug = models.SlugField(default="", blank=True)
-    location = models.ForeignKey(Address, on_delete=models.SET_NULL, null=True, default=None, blank=True)
+    latitude = models.FloatField(blank=True, null=True, default=None)
+    longitude = models.FloatField(blank=True, null=True, default=None)
     relaxation_type = MultiSelectField(max_length=255, max_choices=5, choices=RELAXATIONTYPE, null=True, blank=True)
     trip_goal = MultiSelectField(max_length=255, max_choices=5, choices=TRIPGOAL, null=True, blank=True)
     with_food = models.BooleanField(default=False)
@@ -86,6 +88,10 @@ class Place(models.Model):
     def __str__(self):
         return self.name
 
+    def get_address(self):
+        geolocator = Nominatim(user_agent="place_address")
+        location = geolocator.reverse((self.latitude, self.longitude), language='uk')
+        return location.address if location else "Адреса не знайдена"
 
 
 
