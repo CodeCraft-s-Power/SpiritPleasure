@@ -47,6 +47,8 @@ class Address(models.Model):
     def __str__(self):
         return f"{self.street}, {self.city}, {self.region}, {self.postalcode}"
 
+
+
 class Place(models.Model):
     RELAXATIONTYPE = (
         ('FAMILY', 'Сімейний'),
@@ -91,8 +93,15 @@ class Place(models.Model):
     def get_address(self):
         geolocator = Nominatim(user_agent="place_address")
         location = geolocator.reverse((self.latitude, self.longitude), language='uk')
-        return location.address if location else "Адреса не знайдена"
-
+        if location:
+            return Address.objects.create(
+                street=location.raw.get('address', {}).get('road', ''),
+                city=location.raw.get('address', {}).get('city', ''),
+                region=location.raw.get('address', {}).get('state', ''),
+                postalcode=location.raw.get('address', {}).get('postcode', '')
+            )
+        else:
+            return Address.objects.create(street='', city='', region='', postalcode='')
 
 
 class History(models.Model):

@@ -6,28 +6,43 @@ from rest_framework.parsers import MultiPartParser, FormParser
 from .models import Address, Place, History
 from django.conf import settings
 import os
+from django.db import connection
 
-class IntegrationTest(APITestCase):
+def drop_table(table_name):
+    with connection.schema_editor() as schema_editor:
+        schema_editor.execute(f"DROP TABLE IF EXISTS {table_name};")
+
+class PlaceIntegrationTest(APITestCase):
+    @classmethod
+    def setUpClass(cls):
+        super().setUpClass()
+        drop_table('place_image_place')
+
+    @classmethod
+    def tearDownClass(cls):
+        super().tearDownClass()
+        # Optionally, you can recreate the table after all tests have finished
+        # Recreate the table here if needed
+
     def setUp(self):
-        self.user = User.objects.create(username='test_user', password='test_password')
-        self.client.force_authenticate(user=self.user)
-
-    def test_create_and_retrieve_place(self):
-        image_paths = [
+        self.image_paths = [
             os.path.join(settings.MEDIA_ROOT, 'place_images', 'example_image1.jpg'),
             os.path.join(settings.MEDIA_ROOT, 'place_images', 'example_image2.jpg')
         ]
-
-        image_data = [open(image_path, 'rb') for image_path in image_paths]
-
+        self.images_data = [open(image_path, 'rb') for image_path in self.image_paths]
         self.client.parser_classes = (MultiPartParser, FormParser)
 
+    def tearDown(self):
+        for image_data in self.images_data:
+            image_data.close()
+
+    def test_create_and_retrieve_place(self):
         create_response = self.client.post('/places/', {
             'name': 'Test Place',
             'description': 'Test Description',
-            'relaxation_type': 'Сімейний',
-            'trip_goal': 'Розслабитися',
-            'uploaded_images': image_data
+            'relaxation_type': ['FAMILY'],
+            'trip_goal': ['RELAXATION'],
+            'uploaded_images': self.images_data
         })
         self.assertEqual(create_response.status_code, status.HTTP_201_CREATED)
         place_id = create_response.data['id']
@@ -35,7 +50,6 @@ class IntegrationTest(APITestCase):
         retrieve_response = self.client.get(f'/places/{place_id}/')
         self.assertEqual(retrieve_response.status_code, status.HTTP_200_OK)
         self.assertEqual(retrieve_response.data['name'], 'Test Place')
-
 
 
 class PlaceTestCase(TestCase):

@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="add: geo" />
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="add: geo">
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0002_image_place.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0003_place_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0004_remove_history_user_history_token.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0005_remove_history_token_history_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0006_place_with_food_place_with_sleep.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_alter_place_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0008_alter_image_place_alter_place_image.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0009_alter_image_image_remove_image_place_and_more.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0010_alter_place_location.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0011_remove_place_image_place_slug.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0012_alter_place_slug.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" afterDir="false" />
+    </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,6 +271,8 @@
       <workItem from="1715023583903" duration="6476000" />
       <workItem from="1715080974060" duration="645000" />
       <workItem from="1715176484310" duration="2762000" />
+      <workItem from="1715251584281" duration="232000" />
+      <workItem from="1715258094249" duration="4251000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -574,7 +594,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715179269763</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="add: geo">
+      <option name="closed" value="true" />
+      <created>1715251681909</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1715251681909</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,13 +671,6 @@
                     <value>
                       <list>
                         <option value="origin/Dev" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="user">
-                    <value>
-                      <list>
-                        <option value="*" />
                       </list>
                     </value>
                   </entry>
