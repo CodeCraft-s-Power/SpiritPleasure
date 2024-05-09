@@ -18,7 +18,8 @@ class RelaxationType(models.TextChoices):
     COGNITIVE = 'Пізнавальний'
     WITH_COMPANY = 'З компанією'
     MEDICAL = 'Лікувально-оздоровчий'
-
+    CREATIVE = 'Творчий'
+    SHOPPING = 'Шопінг'
 class TripGoal(models.TextChoices):
     RELAXATION = 'Розслабитися'
     ENJOY_NATURE = 'Насолодидись природою'
@@ -26,14 +27,14 @@ class TripGoal(models.TextChoices):
     SWIM = 'Поплавати'
     VISIT_MUSEUMS_CASTLES = 'Відвідати музеї/замки'
     EAT_TASTY = 'Смачно поїсти'
-    HAVE_FUN_IN_CLUB = 'Розважитися в клубі'
+    HAVE_FUN = 'Розважитися'
     LEARN_SOMETHING_NEW = 'Дізнатись щось нове'
     SKIING = 'Покататись на лижах'
     WALK_CITY = 'Погуляти містом'
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='place_images/')
-    place = models.ForeignKey('Place', related_name='images', blank=True, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='place_images/', default='place_images/default photo.jpg')
+    place = models.ForeignKey('Place', related_name='images', blank=True, on_delete=models.CASCADE, default=None)
 
     def __str__(self):
         return self.image.url if self.image else ''
@@ -63,7 +64,9 @@ class Place(models.Model):
         ('NATURE', 'На природі'),
         ('COGNITIVE', 'Пізнавальний'),
         ('WITH_COMPANY', 'З компанією'),
-        ('MEDICAL', 'Лікувально-оздоровчий')
+        ('MEDICAL', 'Лікувально-оздоровчий'),
+        ('CREATIVE', 'Творчий'),
+        ('SHOPPING', 'Шопінг')
     )
     TRIPGOAL = (
         ('RELAXATION', 'Розслабитися'),
@@ -72,7 +75,7 @@ class Place(models.Model):
         ('SWIM', 'Поплавати'),
         ('VISIT_MUSEUMS_CASTLES', 'Відвідати музеї/замки'),
         ('EAT_TASTY', 'Смачно поїсти'),
-        ('HAVE_FUN_IN_CLUB', 'Розважитися в клубі'),
+        ('HAVE_FUN', 'Розважитися'),
         ('LEARN_SOMETHING_NEW', 'Дізнатись щось нове'),
         ('SKIING', 'Покататись на лижах'),
         ('WALK_CITY', 'Погуляти містом')

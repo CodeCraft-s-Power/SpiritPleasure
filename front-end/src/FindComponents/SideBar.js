@@ -47,8 +47,8 @@ const SideBar = () => {
 
         let filteredPlaces = await originalPlaces.filter(place => (
             place.location.region === criteria.region &&
-            place.relaxation_type === criteria.relaxation_type &&
-            place.trip_goal === criteria.trip_goal &&
+            place.relaxation_type.includes(criteria.relaxation_type) &&
+            place.trip_goal.includes(criteria.trip_goal) &&
             place.with_food === criteria.with_food &&
             place.with_sleep === criteria.with_sleep
         ));
@@ -90,35 +90,37 @@ const SideBar = () => {
                 <div className="dropdown">
                     <select id="dropdown2" onChange={handleDropdownChange} className="element">
                         <option value="">Якому відпочинку надаєте перевагу?</option>
-                        <option value="Сімейний">Сімейний</option>
-                        <option value="Шопінг">Шопінг</option>
-                        <option value="Гірський">Гірський</option>
-                        <option value="Екстримальний">Екстримальний</option>
-                        <option value="СПА">СПА</option>
-                        <option value="Заспокійливий">Заспокійливий</option>
-                        <option value="Пасивний">Пасивний</option>
-                        <option value="Активний">Активний</option>
-                        <option value="З водоймою">З водоймою</option>
-                        <option value="На природі">На природі</option>
-                        <option value="Пізнавальний">Пізнавальний</option>
+                        <option value="FAMILY">Сімейний</option>
+                        <option value="SHOPPING">Шопінг</option>
+                        <option value="MOUNTAIN">Гірський</option>
+                        <option value="EXTREME">Екстримальний</option>
+                        <option value="SPA">СПА</option>
+                        <option value="CALMING">Заспокійливий</option>
+                        <option value="PASSIVE">Пасивний</option>
+                        <option value="ACTIVE">Активний</option>
+                        <option value="WITH_WATER">З водоймою</option>
+                        <option value="NATURE">На природі</option>
+                        <option value="COGNITIVE">Пізнавальний</option>
                         <option value="Творчий">Творчий</option>
-                        <option value="З компанією">З компанією</option>
-                        <option value="Лікувально-оздоровчий">Лікувально-оздоровчий</option>
-                        <option value="Молодіжний">Молодіжний</option>
+                        <option value="WITH_COMPANY">З компанією</option>
+                        <option value="MEDICAL">Лікувально-оздоровчий</option>
+                        <option value="YOUTH">Молодіжний</option>
+
                     </select>
                 </div>
                 <div className="dropdown">
                     <select id="dropdown3" onChange={handleDropdownChange} className="element">
                         <option value="">Ціль вашої поїздки</option>
-                        <option value="Розслабитися">Розслабитися</option>
-                        <option value="Насолодитися природою">Насолодитися природою</option>
-                        <option value="Зробити гарні фото">Зробити гарні фото</option>
-                        <option value="Відвідати музеї/замки">Відвідати музеї/замки</option>
-                        <option value="Смачно поїсти">Смачно поїсти</option>
-                        <option value="Розважитися">Розважитися</option>
-                        <option value="Дізнатися щось нове">Дізнатися щось нове</option>
-                        <option value="Покататися на лижах">Покататися на лижах</option>
-                        <option value="Погуляти містом">Погуляти містом</option>
+                        <option value="RELAXATION">Розслабитися</option>
+                        <option value="ENJOY_NATURE">Насолодитися природою</option>
+                        <option value="MAKE_NICE_PHOTOS">Зробити гарні фото</option>
+                        <option value="VISIT_MUSEUMS_CASTLES">Відвідати музеї/замки</option>
+                        <option value="EAT_TASTY">Смачно поїсти</option>
+                        <option value="HAVE_FUN">Розважитися</option>
+                        <option value="LEARN_SOMETHING_NEW">Дізнатися щось нове</option>
+                        <option value="SKIING">Покататися на лижах</option>
+                        <option value="ПWALK_CITY">Погуляти містом</option>
+                        <option value="SWIM">Поплавати</option>
                     </select>
                 </div>
                 <div className="checkbox-item">
