@@ -1,4 +1,5 @@
-.slider {
+/* Стилі для слайдера */
+.slider-container {
     margin-top: 10px;
     margin-right: 10px;
     position: relative;
@@ -7,11 +8,15 @@
     height: 36px;
 }
 
-.slider input[type="checkbox"] {
-    display: none;
+.slider-container input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
 }
 
-.slider-toggle {
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -23,49 +28,58 @@
     border-radius: 26px;
 }
 
-.slider-toggle:before {
+.slider:before {
     position: absolute;
     content: "";
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
+    top: 3px; /* Змінено з `top: 50%;` */
     left: 3px;
-    bottom: 3px;
+    transform: translate(0); /* Змінено з `transform: translateX(0);` */
     background-color: white;
     transition: .4s;
     border-radius: 50%;
 }
 
-input[type="checkbox"]:checked + .slider-toggle {
+
+
+input[type="checkbox"]:checked + .slider {
     background-color: rgba(209, 200, 193, 1);
 }
 
-input[type="checkbox"]:checked + .slider-toggle:before {
+input[type="checkbox"]:checked + .slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
     transform: translateX(22px);
 }
 
-
-.slider-button {
-    display: flex;
-    justify-content: space-between; /* Змінено з 'flex-end' на 'space-between' */
-    align-items: center; /* Додано вирівнювання по вертикалі */
-}
-
-.exit-button-button {
+/* Стилі для кнопки вихіду або входу */
+.exit-button {
     width: 46px;
     height: 46px;
     background-image: url("../img/login.png");
     background-color: transparent;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.exit-button-button {
+    width: 46px;
+    height: 46px;
+    background-color: transparent;
+    border: none;
 }
 
-@media screen and (max-width: 700px){
-    .slider{
-        display: none;
-    }
-    .slider-toggle{
-        display: none;
-    }
-    .exit-button-button{
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Медіа-запит для схову слайдера на мобільних пристроях */
+@media screen and (max-width: 700px) {
+    .slider-container {
         display: none;
     }
 }

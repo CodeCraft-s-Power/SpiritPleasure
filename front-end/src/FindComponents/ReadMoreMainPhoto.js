@@ -1,52 +1,42 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ReadMoreMainPhoto.css';
 
-class ReadMoreMainPhoto extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            currentSlide: 0,
-            slides: [
-                require('../img/mainImage.png'),
-                require('../img/objectPhoto.png'),
-            ],
+const ReadMoreMainPhoto = () => {
+    const [currentSlide, setCurrentSlide] = useState(0);
+    const [slides, setSlides] = useState([]);
+
+    useEffect(() => {
+        const fetchSlides = async () => {
+            const images = [
+                await import('../img/mainImage.png'),
+                await import('../img/objectPhoto.png'),
+            ];
+            setSlides(images);
         };
-    }
 
-    componentDidMount() {
-        // Запускаємо автоматичний перехід між слайдами кожні 0.5 секунди
-        this.interval = setInterval(this.nextSlide, 1500);
-    }
+        fetchSlides();
 
-    componentWillUnmount() {
-        // Зупиняємо автоматичний перехід після розмонтажу компонента
-        clearInterval(this.interval);
-    }
+        const interval = setInterval(() => {
+            setCurrentSlide(prevSlide => (prevSlide + 1) % slides.length);
+        }, 1500);
 
-    nextSlide = () => {
-        this.setState((prevState) => ({
-            currentSlide: (prevState.currentSlide + 1) % prevState.slides.length,
-        }));
-    };
+        return () => clearInterval(interval);
+    }, [slides.length]);
 
-    render() {
-        const { currentSlide, slides } = this.state;
-
-        return (
-            <div className="slider-container">
-                <div className="slider21">
-                    {slides.map((slide, index) => (
-                        <img
-                            key={index}
-                            src={slide}
-                            alt={`Slide ${index + 1}`}
-                            className={index === currentSlide ? "slide active" : "slide"}
-                        />
-                    ))}
-                </div>
+    return (
+        <div className="slider-container1">
+            <div className="slider21">
+                {slides.map((slide, index) => (
+                    <img
+                        key={index}
+                        src={slide.default}
+                        alt={`Slide ${index + 1}`}
+                        className={index === currentSlide ? "slide active" : "slide"}
+                    />
+                ))}
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
 
 export default ReadMoreMainPhoto;

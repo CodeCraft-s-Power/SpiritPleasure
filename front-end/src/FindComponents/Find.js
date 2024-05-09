@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import './Find.css'
 import BottNavBar from "./BottNavBar";
 import SideBar from "./SideBar";
@@ -15,9 +14,9 @@ class Find extends Component {
                 <TopNavBar/>
                 <BottomNavBar />
                 <div className="MainFind">
-                <SideBar/>
+                    <SideBar/>
                     <CenterPart/>
-                <FindComponentItem/>
+                    {/*<FindComponentItem/>*/}
                 </div>
 
             </div>

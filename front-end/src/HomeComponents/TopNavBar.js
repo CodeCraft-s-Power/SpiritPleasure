@@ -3,25 +3,24 @@ import { NavLink } from 'react-router-dom';
 import './TopNavBar.css';
 import { useUser } from '../UserContext';
 import Logout from "../Logout Components/Logout";
-function TopNavBar() {
 
+function TopNavBar() {
     const { isLoggedIn } = useUser();
 
     return (
-        <div className="slider-button">
-            <div className="Exit-button">
-                {/* Відображення або посилання на вихід або на вхід, залежно від стану залогіненості */}
+        <div className="top-navbar">
+            <div className="exit-button">
                 {isLoggedIn ? (
-                    <Logout/>
+                    <Logout />
                 ) : (
                     <NavLink to="/login">
                         <button className="exit-button-button"></button>
                     </NavLink>
                 )}
             </div>
-            <label className="slider">
-                <input type="checkbox"/>
-                <span className="slider-toggle"></span>
+            <label className="slider-container">
+                <input type="checkbox" />
+                <span className="slider"></span>
             </label>
         </div>
     );
