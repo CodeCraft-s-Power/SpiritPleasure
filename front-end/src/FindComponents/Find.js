@@ -6,22 +6,24 @@ import BottomNavBar from "../HomeComponents/BottomNavBar";
 import TopNavBar from "../HomeComponents/TopNavBar";
 import FindComponentItem from "./FindComponentItem";
 import CenterPart from "./CenterPart";
+import { usePlace } from '../PlaceContext';
 
-class Find extends Component {
-    render() {
-        return (
-            <div>
-                <TopNavBar/>
-                <BottomNavBar />
-                <div className="MainFind">
-                    <SideBar/>
-                    <CenterPart/>
-                    {/*<FindComponentItem/>*/}
-                </div>
+const Find = () => {
+    const { places, originalPlaces } = usePlace();
 
-            </div>
-        );
-    }
+return (
+    <div>
+        <TopNavBar/>
+        <BottomNavBar />
+        <div className="MainFind">
+            <SideBar/>
+            <CenterPart/>
+            {/*<FindComponentItem/>*/}
+        </div>
+
+    </div>
+);
+
 }
 
 export default Find;

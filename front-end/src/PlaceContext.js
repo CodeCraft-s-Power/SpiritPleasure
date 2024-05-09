@@ -4,7 +4,8 @@ export const PlaceContext = createContext();
 
 export const PlaceProvider = ({ children }) => {
     const [places, setPlaces] = useState([]);
-
+    const [originalPlaces, setOriginalPlaces] = useState([]);
+    const [shouldFilter, setShouldFilter] = useState(false);
 
     const fetchPlaces = async () => {
         try {
@@ -16,6 +17,7 @@ export const PlaceProvider = ({ children }) => {
             });
             if (response.ok) {
                 const placesData = await response.json();
+                setOriginalPlaces(placesData);
                 setPlaces(placesData);
             } else {
                 console.log("Fetching data failed!");
@@ -30,7 +32,7 @@ export const PlaceProvider = ({ children }) => {
     }, [])
 
     return (
-        <PlaceContext.Provider value={places}>
+        <PlaceContext.Provider value={{ places, originalPlaces, shouldFilter,  setShouldFilter, setPlaces}}>
             {children}
         </PlaceContext.Provider>
     );

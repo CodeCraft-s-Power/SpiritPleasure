@@ -4,16 +4,36 @@ import FindComponentItem from "./FindComponentItem";
 import "./CenterPart.css"
 
 const CenterPart = () => {
-    const places = usePlace();
-    console.log(places)
+    const { places, shouldFilter, originalPlaces, setPlaces } = usePlace();
+
+    let locations = [];
+
+    console.log(`new places: ${places.length}`);
+
+    if (!shouldFilter) {
+        locations = originalPlaces.map(place => (
+            <FindComponentItem
+                key={place.id}
+                place={place}
+            />
+        ));
+    } else {
+        locations.length = 0
+        if (locations.length === places.length + 1) {
+            setPlaces(places.length = 0)
+        }
+        locations = places.map(place => (
+            <FindComponentItem
+                key={place.id}
+                place={place}
+            />
+
+        ));
+    }
+
     return (
         <div className="center-part1">
-            {places.map(place => (
-                <FindComponentItem
-                    key={place.id}
-                    place={place}
-                />
-            ))}
+            {locations}
         </div>
     );
 }
