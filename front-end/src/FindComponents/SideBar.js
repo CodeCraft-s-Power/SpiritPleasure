@@ -101,7 +101,7 @@ const SideBar = () => {
                         <option value="WITH_WATER">З водоймою</option>
                         <option value="NATURE">На природі</option>
                         <option value="COGNITIVE">Пізнавальний</option>
-                        <option value="Творчий">Творчий</option>
+                        <option value="CREATIVE">Творчий</option>
                         <option value="WITH_COMPANY">З компанією</option>
                         <option value="MEDICAL">Лікувально-оздоровчий</option>
                         <option value="YOUTH">Молодіжний</option>
