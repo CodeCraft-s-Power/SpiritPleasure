@@ -95,6 +95,9 @@ DATABASES = {
         'HOST': 'localhost',#'db',
         'PORT': '3306',
         'default-character-set': 'utf8',
+        'TEST': {
+            'NAME': 'test_database',
+        },
     },
 }
 

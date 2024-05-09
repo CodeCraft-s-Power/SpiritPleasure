@@ -24,11 +24,11 @@ class PlaceSerializer(serializers.ModelSerializer):
         child=serializers.FileField(max_length=200000, allow_empty_file=False, use_url=False, ),
         write_only=True
     )
-    address = serializers.CharField(source='get_address', read_only=True)
+    location = AddressSerializer(source='get_address', read_only=True)
 
     class Meta:
         model = Place
-        fields = ['id', 'name', 'description', 'images', 'address', 'relaxation_type', 'trip_goal',
+        fields = ['id', 'name', 'description', 'images', 'location', 'relaxation_type', 'trip_goal',
                   'with_food', 'with_sleep', 'uploaded_images', 'latitude', 'longitude']
         read_only_fields = ['id']
 
