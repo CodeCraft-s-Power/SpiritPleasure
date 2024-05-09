@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="Find,Like">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_31_03_2024_18_49__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2024_19_02__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_10_2024_10_40_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/CenterPart.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/CenterPart.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/Find.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/Find.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/FindComponentItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/FindComponentItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/SideBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/PlaceContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/PlaceContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreComponentsBottomNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreComponentsBottomNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreInfoText.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreInfoText.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreMainPhoto.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreMainPhoto.js" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +83,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/CodeCraft-s-Power/SpiritPleasure.git&quot;,
-    &quot;accountId&quot;: &quot;505777aa-b21a-4bcb-a718-ddc099778377&quot;
+    &quot;accountId&quot;: &quot;7985b7fd-892f-4676-aa12-6bb50f3fb4a7&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -106,7 +112,6 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/admin/WebstormProjects/SpiritPleasure1/front-end/src/assets",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -115,7 +120,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "Shelf.Project.Settings",
-    "ts.external.directory.path": "C:\\Users\\roman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -231,8 +236,6 @@
       <workItem from="1713034989269" duration="9863000" />
       <workItem from="1713247694611" duration="131000" />
       <workItem from="1713277127152" duration="416000" />
-      <workItem from="1715196062742" duration="5443000" />
-      <workItem from="1715253422679" duration="3301000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
