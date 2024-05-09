@@ -119,7 +119,7 @@ const SideBar = () => {
                         <option value="HAVE_FUN">Розважитися</option>
                         <option value="LEARN_SOMETHING_NEW">Дізнатися щось нове</option>
                         <option value="SKIING">Покататися на лижах</option>
-                        <option value="ПWALK_CITY">Погуляти містом</option>
+                        <option value="WALK_CITY">Погуляти містом</option>
                         <option value="SWIM">Поплавати</option>
                     </select>
                 </div>
