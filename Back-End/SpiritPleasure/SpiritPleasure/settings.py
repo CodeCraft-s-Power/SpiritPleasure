@@ -95,12 +95,24 @@ DATABASES = {
         'HOST': 'localhost',#'db',
         'PORT': '3306',
         'default-character-set': 'utf8',
-        'TEST': {
-            'NAME': 'test_database',
-        },
+    },
+    'test': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test_spiritpleasure',
+        'USER': 'backendmanager',
+        'PASSWORD': 'sleep-eat-code-repeat',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'default-character-set': 'utf8',
     },
 }
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'my_cache_table',
+    }
+}
 
 # DATABASES = {
 #     'default': {

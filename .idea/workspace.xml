@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="add: geo">
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0002_image_place.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0003_place_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0004_remove_history_user_history_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0005_remove_history_token_history_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0006_place_with_food_place_with_sleep.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_alter_place_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0008_alter_image_place_alter_place_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0009_alter_image_image_remove_image_place_and_more.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0010_alter_place_location.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0011_remove_place_image_place_slug.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0012_alter_place_slug.py" afterDir="false" />
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="fix: tests, fixtures, cache">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/SpiritPleasure/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/tests.py" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +78,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -108,6 +94,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.SpiritPleasure.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.PlaceHistoryTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.UserIntegrationTest.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.UserRegisterSerializerTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python.tests.executor&quot;: &quot;Run&quot;,
@@ -131,7 +118,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.UserRegisterSerializerTestCase">
+  <component name="RunManager" selected="Python tests.Python tests for tests.PlaceHistoryTestCase">
     <configuration name="SpiritPleasure" type="JavascriptDebugType" uri="http://localhost:3000/index.html">
       <method v="2" />
     </configuration>
@@ -156,6 +143,22 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.PlaceHistoryTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="SpiritPleasure" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Back-End/SpiritPleasure" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.PlaceHistoryTestCase&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for tests.UserIntegrationTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -193,16 +196,17 @@
     <list>
       <item itemvalue="JavaScript Debug.SpiritPleasure" />
       <item itemvalue="Python.tests" />
+      <item itemvalue="Python tests.Python tests for tests.PlaceHistoryTestCase" />
       <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
       <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for tests.PlaceHistoryTestCase" />
         <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
         <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
         <item itemvalue="Python.tests" />
         <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
-        <item itemvalue="Python.tests" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +276,12 @@
       <workItem from="1715080974060" duration="645000" />
       <workItem from="1715176484310" duration="2762000" />
       <workItem from="1715251584281" duration="232000" />
-      <workItem from="1715258094249" duration="4251000" />
+      <workItem from="1715258094249" duration="5725000" />
+      <workItem from="1715268920007" duration="12000" />
+      <workItem from="1715271229889" duration="94000" />
+      <workItem from="1715767474127" duration="2804000" />
+      <workItem from="1715772962831" duration="10176000" />
+      <workItem from="1715845885929" duration="683000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -602,7 +611,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715251681909</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="fix: geo">
+      <option name="closed" value="true" />
+      <created>1715263558752</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1715263558752</updated>
+    </task>
+    <task id="LOCAL-00043" summary="fix: tests, fixtures, cache">
+      <option name="closed" value="true" />
+      <created>1715783067005</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1715783067005</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -683,8 +708,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixtures0" />
-    <MESSAGE value="try_tests" />
     <MESSAGE value="tryToMakePlace" />
     <MESSAGE value="testForUser1" />
     <MESSAGE value="placeCreate" />
@@ -708,10 +731,12 @@
     <MESSAGE value="fix: image &amp; test" />
     <MESSAGE value="fix: choices" />
     <MESSAGE value="add: geo" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: geo" />
+    <MESSAGE value="fix: geo" />
+    <MESSAGE value="fix: tests, fixtures, cache" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: tests, fixtures, cache" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />
+    <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1715769543147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />
     <SUITE FILE_PATH="coverage/SpiritPleasure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1712485632775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication" />
   </component>
 </project>

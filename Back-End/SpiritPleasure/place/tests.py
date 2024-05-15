@@ -8,21 +8,8 @@ from django.conf import settings
 import os
 from django.db import connection
 
-def drop_table(table_name):
-    with connection.schema_editor() as schema_editor:
-        schema_editor.execute(f"DROP TABLE IF EXISTS {table_name};")
 
 class PlaceIntegrationTest(APITestCase):
-    @classmethod
-    def setUpClass(cls):
-        super().setUpClass()
-        drop_table('place_image_place')
-
-    @classmethod
-    def tearDownClass(cls):
-        super().tearDownClass()
-        # Optionally, you can recreate the table after all tests have finished
-        # Recreate the table here if needed
 
     def setUp(self):
         self.image_paths = [
@@ -40,10 +27,9 @@ class PlaceIntegrationTest(APITestCase):
         create_response = self.client.post('/places/', {
             'name': 'Test Place',
             'description': 'Test Description',
-            'relaxation_type': ['FAMILY'],
-            'trip_goal': ['RELAXATION'],
             'uploaded_images': self.images_data
         })
+        print(create_response.data)
         self.assertEqual(create_response.status_code, status.HTTP_201_CREATED)
         place_id = create_response.data['id']
 
@@ -52,47 +38,32 @@ class PlaceIntegrationTest(APITestCase):
         self.assertEqual(retrieve_response.data['name'], 'Test Place')
 
 
-class PlaceTestCase(TestCase):
-    def test_place_after_address_deletion(self):
+class AddressTestCase(TestCase):
+    def test_address_deletion(self):
         address = Address.objects.create(
             street="Test Street",
             city="Test City",
             region="Test Region",
             postalcode="12345"
         )
-        place = Place.objects.create(
-            name="Test Place",
-            description="Test Description",
-            location=address
-        )
 
-        self.assertIsNotNone(place)
+        self.assertIsNotNone(address)
 
         address.delete()
 
-        place.refresh_from_db()
-
-        self.assertIsNone(place.location)
+        self.assertFalse(Address.objects.filter(pk=address.pk).exists())
 
 
 class PlaceHistoryTestCase(TestCase):
     def test_place_history_creation(self):
         user = User.objects.create_user(username='testuser', password='12345')
 
-        address = Address.objects.create(
-            street="Test Street",
-            city="Test City",
-            region="Test Region",
-            postalcode="12345"
-        )
-
         place = Place.objects.create(
             name="Test Place",
             description="Test Description",
-            location=address
         )
 
-        history = History.create_with_user(user, place)
+        history = History.objects.create(user_id=user.id, place=place)
 
-        self.assertEqual(history.user, user)
+        self.assertEqual(history.user_id, user.id)
         self.assertEqual(history.place, place)

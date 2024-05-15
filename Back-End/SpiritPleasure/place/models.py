@@ -1,5 +1,6 @@
 from geopy.geocoders import Nominatim
 from django.db import models
+from django.core.cache import cache
 from django.contrib.auth.models import User
 from multiselectfield import MultiSelectField
 from rest_framework.authtoken.models import Token
@@ -18,7 +19,8 @@ class RelaxationType(models.TextChoices):
     COGNITIVE = 'Пізнавальний'
     WITH_COMPANY = 'З компанією'
     MEDICAL = 'Лікувально-оздоровчий'
-
+    CREATIVE = 'Творчий'
+    SHOPPING = 'Шопінг'
 class TripGoal(models.TextChoices):
     RELAXATION = 'Розслабитися'
     ENJOY_NATURE = 'Насолодидись природою'
@@ -26,14 +28,15 @@ class TripGoal(models.TextChoices):
     SWIM = 'Поплавати'
     VISIT_MUSEUMS_CASTLES = 'Відвідати музеї/замки'
     EAT_TASTY = 'Смачно поїсти'
-    HAVE_FUN_IN_CLUB = 'Розважитися в клубі'
+    HAVE_FUN = 'Розважитися'
     LEARN_SOMETHING_NEW = 'Дізнатись щось нове'
     SKIING = 'Покататись на лижах'
     WALK_CITY = 'Погуляти містом'
 
 class Image(models.Model):
-    image = models.ImageField(upload_to='place_images/')
-    place = models.ForeignKey('Place', related_name='images', blank=True, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='place_images/', default='place_images/default photo.jpg')
+    place = models.ForeignKey('Place', related_name='images', blank=True, on_delete=models.CASCADE, to_field='id',
+                              db_column='place_id')
 
     def __str__(self):
         return self.image.url if self.image else ''
@@ -63,7 +66,9 @@ class Place(models.Model):
         ('NATURE', 'На природі'),
         ('COGNITIVE', 'Пізнавальний'),
         ('WITH_COMPANY', 'З компанією'),
-        ('MEDICAL', 'Лікувально-оздоровчий')
+        ('MEDICAL', 'Лікувально-оздоровчий'),
+        ('CREATIVE', 'Творчий'),
+        ('SHOPPING', 'Шопінг')
     )
     TRIPGOAL = (
         ('RELAXATION', 'Розслабитися'),
@@ -72,7 +77,7 @@ class Place(models.Model):
         ('SWIM', 'Поплавати'),
         ('VISIT_MUSEUMS_CASTLES', 'Відвідати музеї/замки'),
         ('EAT_TASTY', 'Смачно поїсти'),
-        ('HAVE_FUN_IN_CLUB', 'Розважитися в клубі'),
+        ('HAVE_FUN', 'Розважитися'),
         ('LEARN_SOMETHING_NEW', 'Дізнатись щось нове'),
         ('SKIING', 'Покататись на лижах'),
         ('WALK_CITY', 'Погуляти містом')
@@ -91,17 +96,26 @@ class Place(models.Model):
         return self.name
 
     def get_address(self):
-        geolocator = Nominatim(user_agent="place_address")
-        location = geolocator.reverse((self.latitude, self.longitude), language='uk')
-        if location:
-            return Address.objects.create(
-                street=location.raw.get('address', {}).get('road', ''),
-                city=location.raw.get('address', {}).get('city', ''),
-                region=location.raw.get('address', {}).get('state', ''),
-                postalcode=location.raw.get('address', {}).get('postcode', '')
-            )
+        cache_key = f"place_address_{self.pk}"
+        cached_address = cache.get(cache_key)
+
+        if cached_address is None:
+            geolocator = Nominatim(user_agent="place_address")
+            location = geolocator.reverse((self.latitude, self.longitude), language='uk')
+            if location:
+                address = Address.objects.create(
+                    street=location.raw.get('address', {}).get('road', ''),
+                    city=location.raw.get('address', {}).get('city', ''),
+                    region=location.raw.get('address', {}).get('state', ''),
+                    postalcode=location.raw.get('address', {}).get('postcode', '')
+                )
+
+                cache.set(cache_key, address, timeout=None)
+                return address
+            else:
+                return None
         else:
-            return Address.objects.create(street='', city='', region='', postalcode='')
+            return cached_address
 
 
 class History(models.Model):

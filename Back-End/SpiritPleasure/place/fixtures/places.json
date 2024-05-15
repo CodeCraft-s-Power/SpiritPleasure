@@ -3,61 +3,42 @@
         "model": "place.address",
         "pk": 1,
         "fields": {
-            "street": "123 Main St",
-            "city": "Exampleville",
-            "region": "Examplestate",
-            "postalcode": "12345"
-        }
-    },
-    {
-        "model": "place.address",
-        "pk": 2,
-        "fields": {
-            "street": "456 Elm St",
-            "city": "Sampletown",
-            "region": "Samplestate",
-            "postalcode": "54321"
-        }
-    },
-    {
-        "model": "place.image",
-        "pk": 1,
-        "fields": {
-            "image": "place_images/example_image1.jpg"
-        }
-    },
-    {
-        "model": "place.image",
-        "pk": 2,
-        "fields": {
-            "image": "place_images/example_image2.jpg"
+            "street": "Вулиця Шевченка 1",
+            "city": "Львів",
+            "region": "Львівська область",
+            "postalcode": "79000"
         }
     },
     {
         "model": "place.place",
         "pk": 1,
         "fields": {
-            "name": "Example Place",
-            "description": "This is an example place",
-            "location": 1,
-            "relaxation_type": "SPA",
-            "trip_goal": "Розслабитися"
+            "name": "Львівський замок",
+            "description": "Львівський замок – одна з головних туристичних пам'яток Львова.",
+            "slug": "lviv-castle",
+            "longitude": 24.0343943433853,
+            "latitude": 49.84799995,
+            "relaxation_type": ["MOUNTAIN", "HISTORICAL"],
+            "trip_goal": ["ENJOY_NATURE", "VISIT_MUSEUMS_CASTLES"],
+            "with_food": true,
+            "with_sleep": true
         }
     },
     {
-        "model": "place.Image",
+        "model": "place.image",
         "pk": 1,
         "fields": {
-            "place": [1],
-            "image": "place_images/example_image1.jpg"
+            "image": "place_images/lviv_castle.jpg",
+            "place": 1
         }
     },
     {
-        "model": "place.Image",
-        "pk": 2,
+        "model": "place.history",
+        "pk": 1,
         "fields": {
-            "place": [1],
-            "image": "place_images/example_image2.jpg"
+            "user": 1,
+            "place": 1,
+            "is_favorite": true
         }
     }
 ]
