@@ -8,7 +8,7 @@ const FindComponentItem = ({ place }) => {
     const { city } = location;
 
     const setReadMoreState = useReadMore();
-    console.log(images)
+    console.log(name, images)
      // Отримати функцію для зміни стану
 
 
