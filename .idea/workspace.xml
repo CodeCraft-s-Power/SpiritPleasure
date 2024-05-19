@@ -5,34 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="Find,Like">
+      <change beforePath="$PROJECT_DIR$/.idea/SpiritPleasure.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SpiritPleasure.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0002_image_place.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0003_place_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0004_remove_history_user_history_token.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0005_remove_history_token_history_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0006_place_with_food_place_with_sleep.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_alter_place_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0008_alter_image_place_alter_place_image.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0009_alter_image_image_remove_image_place_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0010_alter_place_location.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0011_remove_place_image_place_slug.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0012_alter_place_slug.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0013_alter_place_relaxation_type_alter_place_trip_goal.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0014_remove_place_location_place_latitude_place_longitude_and_more.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/SideBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/HomeComponents/BottomNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/HomeComponents/BottomNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/PlaceContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/PlaceContext.js" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DatabaseLocalColorSettings">
-    <colors>
-      <entry key="0d118939-1d74-45ea-99f6-f0d3b4ad3870" value="Green" />
-    </colors>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,7 +72,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/CodeCraft-s-Power/SpiritPleasure.git&quot;,
-    &quot;accountId&quot;: &quot;7985b7fd-892f-4676-aa12-6bb50f3fb4a7&quot;
+    &quot;accountId&quot;: &quot;e4244030-9c03-4917-87d7-7db593f315a0&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -108,32 +92,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.SpiritPleasure.executor": "Run",
-    "Python tests.Python tests for tests.UserIntegrationTest.executor": "Run",
-    "Python tests.Python tests for tests.UserRegisterSerializerTestCase.executor": "Run",
-    "Python.tests.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/admin/WebstormProjects/SpiritPleasure1/front-end/src/assets",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "Shelf.Project.Settings",
-    "ts.external.directory.path": "C:\\Users\\roman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.SpiritPleasure.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.UserIntegrationTest.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.UserRegisterSerializerTestCase.executor&quot;: &quot;Run&quot;,
+    &quot;Python.tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/WebstormProjects/SpiritPleasure1/front-end/src/assets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\roman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure1\front-end\src\assets" />
@@ -205,12 +189,16 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.SpiritPleasure" />
+      <item itemvalue="Python.tests" />
+      <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
+      <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
     </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -241,6 +229,9 @@
       <workItem from="1713034989269" duration="9863000" />
       <workItem from="1713247694611" duration="131000" />
       <workItem from="1713277127152" duration="416000" />
+      <workItem from="1715319474261" duration="2081000" />
+      <workItem from="1715771840556" duration="1115000" />
+      <workItem from="1716131975612" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />

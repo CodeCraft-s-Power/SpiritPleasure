@@ -15,6 +15,7 @@ const CenterPart = () => {
             <FindComponentItem
                 key={place.id}
                 place={place}
+                onHistory={false}
             />
         ));
     } else {
@@ -26,6 +27,7 @@ const CenterPart = () => {
             <FindComponentItem
                 key={place.id}
                 place={place}
+                onHistory={false}
             />
 
         ));
