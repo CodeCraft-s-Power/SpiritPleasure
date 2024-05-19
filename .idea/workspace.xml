@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="fix: tests, fixtures, cache">
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="Find,Like">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0002_alter_place_options_alter_address_id_and_more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0003_alter_history_place_alter_history_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0004_alter_history_place.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0005_alter_history_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0006_alter_history_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_alter_image_image_alter_place_relaxation_type_and_more.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/FindComponentItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/FindComponentItem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/LikedComponents/Liked.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/LikedComponents/Liked.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/PlaceContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/PlaceContext.js" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +29,11 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="JSX File" />
-        <option value="package.json" />
         <option value="Python Script" />
+        <option value="package.json" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -53,7 +64,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="forPulls" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -65,14 +76,12 @@
     &quot;assignee&quot;: &quot;RomanRavlyk&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="2474d9fc-ef8c-41d0-96e9-c508882a7b15" />
-        <option name="url" value="https://github.com/CodeCraft-s-Power/SpiritPleasure.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CodeCraft-s-Power/SpiritPleasure.git&quot;,
+    &quot;accountId&quot;: &quot;e4244030-9c03-4917-87d7-7db593f315a0&quot;
+  }
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -93,22 +102,21 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;JavaScript Debug.SpiritPleasure.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for tests.PlaceHistoryTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.UserIntegrationTest.executor&quot;: &quot;Run&quot;,
     &quot;Python tests.Python tests for tests.UserRegisterSerializerTestCase.executor&quot;: &quot;Run&quot;,
     &quot;Python.tests.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Project/SpiritPleasure/Back-End/SpiritPleasure&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/admin/WebstormProjects/SpiritPleasure1/front-end/src/assets&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\PyCharm 2023.3.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\roman\\AppData\\Local\\Programs\\WebStorm\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -117,7 +125,17 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.PlaceHistoryTestCase">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure1\front-end\src\assets" />
+      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure1\front-end\src\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure1\front-end\src\img" />
+      <recent name="C:\Users\admin\WebstormProjects\SpiritPleasure1\front-end\public" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.SpiritPleasure">
     <configuration name="SpiritPleasure" type="JavascriptDebugType" uri="http://localhost:3000/index.html">
       <method v="2" />
     </configuration>
@@ -142,22 +160,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for tests.PlaceHistoryTestCase" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="SpiritPleasure" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Back-End/SpiritPleasure" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.PlaceHistoryTestCase&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for tests.UserIntegrationTest" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -194,25 +196,13 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.SpiritPleasure" />
-      <item itemvalue="Python.tests" />
-      <item itemvalue="Python tests.Python tests for tests.PlaceHistoryTestCase" />
-      <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
-      <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Python tests for tests.PlaceHistoryTestCase" />
-        <item itemvalue="Python tests.Python tests for tests.UserIntegrationTest" />
-        <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
-        <item itemvalue="Python.tests" />
-        <item itemvalue="Python tests.Python tests for tests.UserRegisterSerializerTestCase" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-2887949eec09-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.13763.11" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
+        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
       </set>
     </attachedChunks>
   </component>
@@ -242,48 +232,10 @@
       <workItem from="1713013648172" duration="6021000" />
       <workItem from="1713034989269" duration="9863000" />
       <workItem from="1713247694611" duration="131000" />
-      <workItem from="1713277127152" duration="2643000" />
-      <workItem from="1713451163107" duration="942000" />
-      <workItem from="1713505462337" duration="1087000" />
-      <workItem from="1713537998111" duration="3648000" />
-      <workItem from="1713628860675" duration="22000" />
-      <workItem from="1713635587072" duration="196000" />
-      <workItem from="1713821821918" duration="2798000" />
-      <workItem from="1713882765836" duration="1494000" />
-      <workItem from="1713894621332" duration="18000" />
-      <workItem from="1713894661591" duration="4341000" />
-      <workItem from="1713901025947" duration="447000" />
-      <workItem from="1713901832079" duration="743000" />
-      <workItem from="1714055025569" duration="9568000" />
-      <workItem from="1714065991703" duration="187000" />
-      <workItem from="1714239671623" duration="1755000" />
-      <workItem from="1714318332693" duration="125000" />
-      <workItem from="1714398699339" duration="1799000" />
-      <workItem from="1714400723591" duration="202000" />
-      <workItem from="1714400957764" duration="602000" />
-      <workItem from="1714402100862" duration="14000" />
-      <workItem from="1714402459041" duration="672000" />
-      <workItem from="1714407584257" duration="190000" />
-      <workItem from="1714658793844" duration="4997000" />
-      <workItem from="1714674630596" duration="778000" />
-      <workItem from="1714715561921" duration="681000" />
-      <workItem from="1714757555511" duration="4574000" />
-      <workItem from="1714892066404" duration="804000" />
-      <workItem from="1714901496880" duration="568000" />
-      <workItem from="1714909287601" duration="9841000" />
-      <workItem from="1715023583903" duration="6476000" />
-      <workItem from="1715080974060" duration="645000" />
-      <workItem from="1715176484310" duration="2762000" />
-      <workItem from="1715251584281" duration="232000" />
-      <workItem from="1715258094249" duration="5725000" />
-      <workItem from="1715268920007" duration="12000" />
-      <workItem from="1715271229889" duration="94000" />
-      <workItem from="1715767474127" duration="2804000" />
-      <workItem from="1715772962831" duration="10176000" />
-      <workItem from="1715845885929" duration="1102000" />
-      <workItem from="1715850624225" duration="967000" />
-      <workItem from="1716053779892" duration="593000" />
-      <workItem from="1716142878253" duration="668000" />
+      <workItem from="1713277127152" duration="416000" />
+      <workItem from="1715319474261" duration="2081000" />
+      <workItem from="1715771840556" duration="1115000" />
+      <workItem from="1716131975612" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -453,191 +405,31 @@
       <option name="project" value="LOCAL" />
       <updated>1713044172173</updated>
     </task>
-    <task id="LOCAL-00022" summary="fixed com: history">
+    <task id="LOCAL-00022" summary="HomePage routes">
       <option name="closed" value="true" />
-      <created>1713277575671</created>
+      <created>1713979545330</created>
       <option name="number" value="00022" />
       <option name="presentableId" value="LOCAL-00022" />
       <option name="project" value="LOCAL" />
-      <updated>1713277575671</updated>
+      <updated>1713979545330</updated>
     </task>
-    <task id="LOCAL-00023" summary="add: favorite &amp; historyURL">
+    <task id="LOCAL-00023" summary="HomePage routes">
       <option name="closed" value="true" />
-      <created>1713279890694</created>
+      <created>1714656520719</created>
       <option name="number" value="00023" />
       <option name="presentableId" value="LOCAL-00023" />
       <option name="project" value="LOCAL" />
-      <updated>1713279890694</updated>
+      <updated>1714656520719</updated>
     </task>
-    <task id="LOCAL-00024" summary="add: favorite &amp; historyURL">
+    <task id="LOCAL-00024" summary="Find,Like">
       <option name="closed" value="true" />
-      <created>1713822254156</created>
+      <created>1714929032355</created>
       <option name="number" value="00024" />
       <option name="presentableId" value="LOCAL-00024" />
       <option name="project" value="LOCAL" />
-      <updated>1713822254156</updated>
+      <updated>1714929032355</updated>
     </task>
-    <task id="LOCAL-00025" summary="update">
-      <option name="closed" value="true" />
-      <created>1713823278939</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1713823278940</updated>
-    </task>
-    <task id="LOCAL-00026" summary="delete: search&amp;filter">
-      <option name="closed" value="true" />
-      <created>1713901131592</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1713901131592</updated>
-    </task>
-    <task id="LOCAL-00027" summary="very bad!">
-      <option name="closed" value="true" />
-      <created>1714062397061</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1714062397062</updated>
-    </task>
-    <task id="LOCAL-00028" summary="add: image model">
-      <option name="closed" value="true" />
-      <created>1714239881761</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1714239881761</updated>
-    </task>
-    <task id="LOCAL-00029" summary="fix: images">
-      <option name="closed" value="true" />
-      <created>1714241243393</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1714241243393</updated>
-    </task>
-    <task id="LOCAL-00030" summary="fix: history &amp; url">
-      <option name="closed" value="true" />
-      <created>1714400486175</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1714400486175</updated>
-    </task>
-    <task id="LOCAL-00031" summary="fix: history &amp; url">
-      <option name="closed" value="true" />
-      <created>1714402704906</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1714402704906</updated>
-    </task>
-    <task id="LOCAL-00032" summary="fix: history &amp; place">
-      <option name="closed" value="true" />
-      <created>1714664413967</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1714664413967</updated>
-    </task>
-    <task id="LOCAL-00033" summary="fix: place image field">
-      <option name="closed" value="true" />
-      <created>1714759700093</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1714759700093</updated>
-    </task>
-    <task id="LOCAL-00034" summary="fix: place image field">
-      <option name="closed" value="true" />
-      <created>1714759835342</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1714759835342</updated>
-    </task>
-    <task id="LOCAL-00035" summary="fix: place &amp; address">
-      <option name="closed" value="true" />
-      <created>1714763419046</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1714763419046</updated>
-    </task>
-    <task id="LOCAL-00036" summary="fix: place &amp; address">
-      <option name="closed" value="true" />
-      <created>1714895249014</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1714895249014</updated>
-    </task>
-    <task id="LOCAL-00037" summary="fix: image &amp; test">
-      <option name="closed" value="true" />
-      <created>1714921077054</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1714921077055</updated>
-    </task>
-    <task id="LOCAL-00038" summary="fix: image &amp; test">
-      <option name="closed" value="true" />
-      <created>1714921098022</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1714921098022</updated>
-    </task>
-    <task id="LOCAL-00039" summary="fix: choices">
-      <option name="closed" value="true" />
-      <created>1715081008178</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1715081008178</updated>
-    </task>
-    <task id="LOCAL-00040" summary="add: geo">
-      <option name="closed" value="true" />
-      <created>1715179269763</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1715179269763</updated>
-    </task>
-    <task id="LOCAL-00041" summary="add: geo">
-      <option name="closed" value="true" />
-      <created>1715251681909</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1715251681909</updated>
-    </task>
-    <task id="LOCAL-00042" summary="fix: geo">
-      <option name="closed" value="true" />
-      <created>1715263558752</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1715263558752</updated>
-    </task>
-    <task id="LOCAL-00043" summary="fix: tests, fixtures, cache">
-      <option name="closed" value="true" />
-      <created>1715783067005</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1715783067005</updated>
-    </task>
-    <task id="LOCAL-00044" summary="fix: tests, fixtures, cache">
-      <option name="closed" value="true" />
-      <created>1715846602804</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1715846602804</updated>
-    </task>
-    <option name="localTasksCounter" value="45" />
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -677,17 +469,6 @@
             </list>
           </value>
         </entry>
-        <entry key="User">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="*" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="TAB_STATES">
@@ -718,6 +499,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created" />
+    <MESSAGE value="tryDB" />
+    <MESSAGE value="MySQL_Con" />
+    <MESSAGE value="fixtures0" />
+    <MESSAGE value="try_tests" />
     <MESSAGE value="tryToMakePlace" />
     <MESSAGE value="testForUser1" />
     <MESSAGE value="placeCreate" />
@@ -727,26 +513,12 @@
     <MESSAGE value="addHistory&amp;FixedImg" />
     <MESSAGE value="EnumPlace" />
     <MESSAGE value="Push 0:35 14.04" />
-    <MESSAGE value="fixed com: history" />
-    <MESSAGE value="add: favorite &amp; historyURL" />
-    <MESSAGE value="update" />
-    <MESSAGE value="delete: search&amp;filter" />
-    <MESSAGE value="very bad!" />
-    <MESSAGE value="add: image model" />
-    <MESSAGE value="fix: images" />
-    <MESSAGE value="fix: history &amp; url" />
-    <MESSAGE value="fix: history &amp; place" />
-    <MESSAGE value="fix: place image field" />
-    <MESSAGE value="fix: place &amp; address" />
-    <MESSAGE value="fix: image &amp; test" />
-    <MESSAGE value="fix: choices" />
-    <MESSAGE value="add: geo" />
-    <MESSAGE value="fix: geo" />
-    <MESSAGE value="fix: tests, fixtures, cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: tests, fixtures, cache" />
+    <MESSAGE value="HomePage routes" />
+    <MESSAGE value="Find,Like" />
+    <option name="LAST_COMMIT_MESSAGE" value="Find,Like" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1715769543147" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />
+    <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />
     <SUITE FILE_PATH="coverage/SpiritPleasure$tests.coverage" NAME="tests Coverage Results" MODIFIED="1712485632775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure/authentication" />
   </component>
 </project>

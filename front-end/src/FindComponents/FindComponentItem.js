@@ -53,6 +53,42 @@
             }
         };
 
+        const changeLikedState = async () => {
+            try {
+                const response = await fetch('http://127.0.0.1:8000/history/');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch user history');
+                }
+                const historyData = await response.json();
+
+                const entry = historyData.find(entry => entry.user === userId && entry.place === id);
+                if (!entry) {
+                    console.log("Entry not found in history!");
+                    return;
+                }
+
+                const updatedEntry = {
+                    ...entry,
+                    is_favorite: !entry.is_favorite // Змінити стан на протилежний
+                };
+
+                const updateResponse = await fetch(`http://127.0.0.1:8000/history/${entry.id}/`, {
+                    method: 'PUT',
+                    body: JSON.stringify(updatedEntry),
+                    headers: {
+                        "Content-Type": "application/json"
+                    }
+                });
+
+                if (updateResponse.ok) {
+                    console.log("Successfully updated liked state!");
+                } else {
+                    console.log("Failed to update the liked state!");
+                }
+            } catch (error) {
+                console.error(error);
+            }
+        };
 
         const handleClick = () => {
                 setReadMoreState({
@@ -64,12 +100,12 @@
             };
 
             return (
-                <div key={id} onClick={handleClick}>
+                <div key={id}>
                     <NavLink to={`/read-more?onHistory=${onHistory}`}>
-                        <div className="FirstItem" style={{backgroundImage: `url(${images[0].image})`}}>
-                            <button className="LikeButton"></button>
+                        <div className="FirstItem" onClick={handleClick} style={{backgroundImage: `url(${images[0].image})`}}>
                         </div>
                     </NavLink>
+                    <button className="LikeButton" onClick={changeLikedState}></button>
                     <div className="UnderItemText">
                         <span className="UnderItmeText">{name}</span>
                         <br/>
@@ -77,5 +113,5 @@
                     </div>
                 </div>
             );
-        };
+    };
     export default FindComponentItem;
