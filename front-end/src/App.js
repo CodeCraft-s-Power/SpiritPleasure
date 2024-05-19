@@ -28,7 +28,7 @@ function App() {
                                         <Route path="/liked" element={<Liked />} />
                                         <Route path="/history" element={<History />} />
                                         <Route path="/login" element={<Login />}/>
-                                        <Route path="/login" element={<Logout />}/>
+                                        <Route path="/logout" element={<Logout />}/>
                                         <Route path="/read-more/" element={<ReadMoreComponent />} />
                                         <Route path="/registration" element={<Registration />}/>
                                     </Routes>
