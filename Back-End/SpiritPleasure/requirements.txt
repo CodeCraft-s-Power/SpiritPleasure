@@ -9,6 +9,6 @@ pillow==10.3.0
 PyJWT==2.8.0
 sqlparse==0.4.4
 tzdata==2024.1
-django-multiselectfield=0.1.12
-geographiclib=2.0
-geopy=2.4.1
+django-multiselectfield==0.1.12
+geographiclib==2.0
+geopy==2.4.1

@@ -1,16 +1,24 @@
 version: '3.12'
 
+secrets:
+  DB_USER:
+    file: /secrets/db_user.txt
+  DB_PASSWORD:
+    file: /secrets/db_password.txt
+
 services:
   db:
     image: mysql:8.0.36
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: DB_PASSWORD
+      MYSQL_ROOT_PASSWORD_FILE: /run/secrets/DB_PASSWORD
       MYSQL_DATABASE: SpiritPleasure
-      MYSQL_USER: DB_USER
-      MYSQL_PASSWORD: DB_PASSWORD
+      MYSQL_USER_FILE: /run/secrets/DB_USER
+      MYSQL_PASSWORD_FILE: /run/secrets/DB_PASSWORD
     ports:
       - "3306:3306"
+    volumes:
+      - "C:/ProgramData/MySQL/MySQL Server 8.3/data"
     secrets:
       - DB_USER
       - DB_PASSWORD
@@ -34,10 +42,3 @@ services:
       - "3000:3000"
     volumes:
       - /frnt/SpiritPleasure/front-end/
-
-
-secrets:
-  DB_USER:
-    file: ./secrets/db_user.txt
-  DB_PASSWORD:
-    file: ./secrets/db_password.txt
