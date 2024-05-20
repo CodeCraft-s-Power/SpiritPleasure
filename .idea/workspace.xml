@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="Find,Like">
+    <list default="true" id="c44a1dd0-4bed-4e2f-a23f-02569c100dcf" name="Changes" comment="feat: working user liked">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0001_initial.py" beforeDir="false" />
@@ -16,8 +16,8 @@
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/migrations/0007_alter_image_image_alter_place_relaxation_type_and_more.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Back-End/SpiritPleasure/place/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/FindComponentItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/FindComponentItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/LikedComponents/Liked.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/LikedComponents/Liked.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front-end/src/PlaceContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/PlaceContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreComponentsBottomNavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/ReadMoreComponentsBottomNavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front-end/src/FindComponents/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/front-end/src/FindComponents/SideBar.js" afterDir="false" />
     </list>
     <list id="50fc23c3-7830-44e2-8332-3edfcdd06dcc" name="Changes by KDFX Modes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -76,12 +76,12 @@
     &quot;assignee&quot;: &quot;RomanRavlyk&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/CodeCraft-s-Power/SpiritPleasure.git&quot;,
-    &quot;accountId&quot;: &quot;e4244030-9c03-4917-87d7-7db593f315a0&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/CodeCraft-s-Power/SpiritPleasure.git",
+    "accountId": "505777aa-b21a-4bcb-a718-ddc099778377"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -201,8 +201,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-PY-241.15989.155" />
-        <option value="bundled-python-sdk-babbdf50b680-7c6932dee5e4-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.15989.155" />
+        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-WS-241.15989.105" />
       </set>
     </attachedChunks>
   </component>
@@ -236,6 +235,7 @@
       <workItem from="1715319474261" duration="2081000" />
       <workItem from="1715771840556" duration="1115000" />
       <workItem from="1716131975612" duration="712000" />
+      <workItem from="1716208990672" duration="1811000" />
     </task>
     <task id="LOCAL-00001" summary="Created">
       <option name="closed" value="true" />
@@ -429,7 +429,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714929032355</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="feat: working user history">
+      <option name="closed" value="true" />
+      <created>1716150690542</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716150690542</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: working user liked">
+      <option name="closed" value="true" />
+      <created>1716150732214</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716150732214</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,6 +457,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="dev" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="origin/Dev" />
@@ -486,7 +507,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/Dev" />
+                        <option value="dev" />
                       </list>
                     </value>
                   </entry>
@@ -515,7 +536,9 @@
     <MESSAGE value="Push 0:35 14.04" />
     <MESSAGE value="HomePage routes" />
     <MESSAGE value="Find,Like" />
-    <option name="LAST_COMMIT_MESSAGE" value="Find,Like" />
+    <MESSAGE value="feat: working user history" />
+    <MESSAGE value="feat: working user liked" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: working user liked" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SpiritPleasure$.coverage" NAME=" Coverage Results" MODIFIED="1712498298612" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Back-End/SpiritPleasure" />

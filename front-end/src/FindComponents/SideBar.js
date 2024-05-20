@@ -45,24 +45,34 @@ const SideBar = () => {
             with_sleep: with_sleep
         }
 
-        let filteredPlaces = await originalPlaces.filter(place => (
-            place.location.region === criteria.region &&
-            place.relaxation_type.includes(criteria.relaxation_type) &&
-            place.trip_goal.includes(criteria.trip_goal) &&
-            place.with_food === criteria.with_food &&
-            place.with_sleep === criteria.with_sleep
-        ));
+        if (selectedOptions.dropdown1 === 'null' &&
+            selectedOptions.dropdown2 === 'null' &&
+            selectedOptions.dropdown3 === 'null' &&
+            selectedOptions.checkbox1 === false &&
+            selectedOptions.checkbox2 === false) {
+            await setPlaces(originalPlaces)
+        }
+        else {
+            let filteredPlaces = await originalPlaces.filter(place => (
+                place.location.region === criteria.region &&
+                place.relaxation_type.includes(criteria.relaxation_type) &&
+                place.trip_goal.includes(criteria.trip_goal) &&
+                place.with_food === criteria.with_food &&
+                place.with_sleep === criteria.with_sleep
+            ))
+            await setPlaces(filteredPlaces);
+            setShouldFilter(true);
+            console.log(`Filtered places count: ${filteredPlaces.length}`);
+        }
 
-        await setPlaces(filteredPlaces);
-        setShouldFilter(true);
-        console.log(`Filtered places count: ${filteredPlaces.length}`);
+
     };
 
     return (
             <div className="list">
                 <div className="dropdown">
                     <select id="dropdown1" onChange={handleDropdownChange} className="element">
-                        <option value="">Оберіть область, яка вас цікавить</option>
+                        <option value="null">Оберіть область, яка вас цікавить</option>
                         <option value="Вінницька область">Вінницька</option>
                         <option value="Волинська область">Волинська</option>
                         <option value="Дніпропетровська область">Дніпропетровська</option>
@@ -89,7 +99,7 @@ const SideBar = () => {
                 </div>
                 <div className="dropdown">
                     <select id="dropdown2" onChange={handleDropdownChange} className="element">
-                        <option value="">Якому відпочинку надаєте перевагу?</option>
+                        <option value="null">Якому відпочинку надаєте перевагу?</option>
                         <option value="FAMILY">Сімейний</option>
                         <option value="SHOPPING">Шопінг</option>
                         <option value="MOUNTAIN">Гірський</option>
@@ -110,7 +120,7 @@ const SideBar = () => {
                 </div>
                 <div className="dropdown">
                     <select id="dropdown3" onChange={handleDropdownChange} className="element">
-                        <option value="">Ціль вашої поїздки</option>
+                        <option value="null">Ціль вашої поїздки</option>
                         <option value="RELAXATION">Розслабитися</option>
                         <option value="ENJOY_NATURE">Насолодитися природою</option>
                         <option value="MAKE_NICE_PHOTOS">Зробити гарні фото</option>

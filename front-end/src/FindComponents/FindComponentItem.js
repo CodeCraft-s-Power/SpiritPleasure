@@ -3,11 +3,13 @@
     import './FindComponentItem.css';
     import { useReadMore } from '../ReadMoreContext';
     import { useUser } from '../UserContext';
+    import { usePlace } from '../PlaceContext'
 
     const FindComponentItem = ({ place, onHistory }) => {
         const {id, name, images, location, description} = place;
         const {city} = location;
         const {userId} = useUser()
+        const { fetchUserLiked, setLikedPlaces, LikedPlaces } = usePlace();
 
         const setReadMoreState = useReadMore();
         console.log(name, images)
@@ -69,7 +71,7 @@
 
                 const updatedEntry = {
                     ...entry,
-                    is_favorite: !entry.is_favorite // Змінити стан на протилежний
+                    is_favorite: !entry.is_favorite
                 };
 
                 const updateResponse = await fetch(`http://127.0.0.1:8000/history/${entry.id}/`, {
@@ -82,6 +84,13 @@
 
                 if (updateResponse.ok) {
                     console.log("Successfully updated liked state!");
+
+                    // Оновлюємо стан LikedPlaces
+                    if (!updatedEntry.is_favorite) {
+                        setLikedPlaces(LikedPlaces.filter(place => place.id !== id));
+                    } else {
+                        fetchUserLiked();
+                    }
                 } else {
                     console.log("Failed to update the liked state!");
                 }
@@ -89,6 +98,7 @@
                 console.error(error);
             }
         };
+
 
         const handleClick = () => {
                 setReadMoreState({
