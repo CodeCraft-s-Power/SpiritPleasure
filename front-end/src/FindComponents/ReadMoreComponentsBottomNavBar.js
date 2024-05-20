@@ -11,7 +11,7 @@ const ReadMoreComponentsBottomNavBar = ({ place, onHistory }) =>  {
     const {userId} = useUser()
     const { fetchUserLiked, setLikedPlaces, LikedPlaces } = usePlace()
 
-    const changeLikedState = async () => {
+    const changeLikedState1 = async () => {
         try {
             const response = await fetch('http://127.0.0.1:8000/history/');
             if (!response.ok) {
@@ -81,7 +81,7 @@ const ReadMoreComponentsBottomNavBar = ({ place, onHistory }) =>  {
                 </NavLink>
 
                 <div className="ItemNameContainer">{name}</div>
-                <button className="HeartButton" onClick={changeLikedState}></button>
+                <button className="HeartButton" onClick={changeLikedState1}></button>
             </ul>
         </div>
     );
