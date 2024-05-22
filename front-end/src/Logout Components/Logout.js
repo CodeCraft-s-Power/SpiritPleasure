@@ -26,7 +26,7 @@ class Logout extends Component {
 
     render() {
         return (
-            <img className={"Logout"} src="../img/logout.png" alt="Logout" onClick={this.handleLogout}/>
+            <img className={"Logout"} src="" alt="" onClick={this.handleLogout}/>
         );
     }
 }

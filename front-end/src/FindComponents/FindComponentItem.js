@@ -112,10 +112,11 @@
             return (
                 <div key={id}>
                     <NavLink to={`/read-more?onHistory=${onHistory}`}>
-                        <div className="FirstItem" onClick={handleClick} style={{backgroundImage: `url(${images[0].image})`}}>
+                        <div className="FirstItem" onClick={handleClick}
+                             style={{backgroundImage: `url(${images[0].image})`}}>
+                            <button className="LikeButton" onClick={changeLikedState}></button>
                         </div>
                     </NavLink>
-                    <button className="LikeButton" onClick={changeLikedState}></button>
                     <div className="UnderItemText">
                         <span className="UnderItmeText">{name}</span>
                         <br/>

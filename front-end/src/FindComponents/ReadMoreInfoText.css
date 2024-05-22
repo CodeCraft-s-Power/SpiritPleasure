@@ -20,6 +20,7 @@
     background: rgba(200, 219, 190, 1);
     font-size: 22px;
     text-align: left;
+    font-family: "Montserrat", sans-serif;
     z-index: -1; /* Підняти блок InfoText над іншими елементами */
 }
 

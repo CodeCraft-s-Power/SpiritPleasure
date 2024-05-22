@@ -95,4 +95,11 @@
     white-space: normal;
 }
 
+@media screen and (max-width: 768px){
+    .list{
+        margin-top: -20px;
+        margin-left: 110px;
+    }
+}
+
 

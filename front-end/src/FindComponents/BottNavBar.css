@@ -70,3 +70,13 @@
     height: 41px;
     margin-left: 25px;
 }
+
+@media screen and (max-width: 768px){
+    .ulnavbar{
+        display: compact;
+        font-size: 25px;
+        width: 1000px;
+        margin-left: 70px;
+        margin-right: 80px;
+    }
+}

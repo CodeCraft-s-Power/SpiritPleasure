@@ -12,7 +12,7 @@ const History = () => {
         <div>
             <TopNavBar />
             <BottomNavBar />
-            <div>
+            <div className="Historypage">
                 {HistoryPlaces.map(place => (
                     <FindComponentItem
                         key={place.id}

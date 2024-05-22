@@ -45,7 +45,7 @@
         font-size: 25px;
         color: rgba(69, 89, 11, 1);
         text-align: center;
-       margin-left: 40px;
+       margin-left: 65px;
     }
     .twoItems{
         display: compact;
@@ -63,7 +63,7 @@
         color:  rgba(245, 245, 245, 1);
         font-size: 15px;
         font-weight: bold;
-        margin-left: 130px;
-        margin-top: -40px;
+        margin-left: 150px;
+        margin-top: -100px;
     }
 }

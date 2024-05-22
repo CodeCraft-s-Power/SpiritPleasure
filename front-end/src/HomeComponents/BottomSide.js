@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './BottomSide.css'
+import {NavLink} from "react-router-dom";
 class BottomSide extends Component {
     render() {
         return (
@@ -10,10 +11,9 @@ class BottomSide extends Component {
                     багато цікавих місць та море насолоди від різних закладів.
                     Ми допоможемо підібрати ваше місце душевної насолоди. То що, ви з нами?
                 </div>
-
+                <NavLink to={"/find"}>
                 <button className="goButton">ПОЇХАЛИ</button>
-
-
+                </NavLink>
             </div>
         );
     }

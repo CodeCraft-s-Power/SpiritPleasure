@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Find.css'
-import BottNavBar from "./BottNavBar";
 import SideBar from "./SideBar";
 import BottomNavBar from "../HomeComponents/BottomNavBar";
 import TopNavBar from "../HomeComponents/TopNavBar";
