@@ -30,25 +30,23 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'rest_framework',
+    'place',
+    'corsheaders',
     'authentication.apps.AuthenticationConfig',
-    'crispy_forms',
-    'crispy_bootstrap5',
+    'rest_framework.authtoken',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_filters',
+    'multiselectfield',
 ]
-
 
 LOGIN_REDIRECT_URL = '/home'
 LOGOUT_REDIRECT_URL = '/login'
 
-
-CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
-
-CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -58,6 +56,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
 ]
 
 ROOT_URLCONF = 'SpiritPleasure.urls'
@@ -83,27 +86,40 @@ WSGI_APPLICATION = 'SpiritPleasure.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'SpiritPleasure',
-#         'USER': 'backendmanager',
-#         'PASSWORD': 'sleep-eat-code-repeat',
-#         'HOST': 'localhost',
-#         'PORT': '3306',
-#         'default-character-set': 'utf8',
-#     },
-#     "OPTIONS": {
-#         "init_command": "SET default_storage_engine=INNODB",
-#     }
-# }
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'SpiritPleasure',
+        'USER': 'backendmanager',
+        'PASSWORD': 'sleep-eat-code-repeat',
+        'HOST': 'db',#'db',
+        'PORT': '3306',
+        'default-character-set': 'utf8',
+    },
+    'test': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test_spiritpleasure',
+        'USER': 'backendmanager',
+        'PASSWORD': 'sleep-eat-code-repeat',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'default-character-set': 'utf8',
+    },
+}
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.db.DatabaseCache',
+        'LOCATION': 'my_cache_table',
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -148,6 +164,8 @@ REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.BrowsableAPIRenderer',
-    ]
+    ],
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
 }
-

@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../assets/static/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Cooper Black';
+    src: url('../assets/COOPBL.TTF') ;
+}
+
+@font-face {
+    font-family: 'Kurale';
+    src: url('../assets/Kurale-Regular.ttf');
+}
+
+
+.ulnavbar2{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type:none ;
+    font-size: 28px;
+    color: rgba(49, 36, 30, 1);
+    border-bottom: 2px solid black;
+    width: 1750px;
+    margin-left: 80px;
+
+    margin-right: 107px;
+}
+.ulnavbar2 li {
+    margin-right: 107px;
+    font-family:Montserrat ;
+}
+
+#li-text1{
+    margin-top: -30px;
+    margin-right: 550px;
+    color:  rgba(69, 89, 11, 1);
+    text-align: center;
+}
+
+.custom-span1{
+    font-family: "Cooper Black";
+    font-size: 50px;
+
+}
+.custom-span2{
+    font-family: "Kurale";
+    font-size:30px ;
+    margin-right: 35px;
+}
+
+
+.ulnavbar2 li a {
+    text-decoration: none;
+    color: rgba(49, 36, 30, 1);
+}
+
+.ulnavbar2 li a:hover {
+    color: rgba(49, 36, 30, 0.7);
+}
+
+.ulnavbar2 li a.active {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 700px){
+    .container {
+        display: compact;
+        flex-direction: column-reverse;
+    }
+    .ulnavbar2{
+      /*  display: flex;
+        justify-content: flex-end;*/
+        list-style-type:none ;
+        font-size: 20px;
+        color: black;
+        border-bottom: none;
+        width: 1500px;
+        height: 50px;
+        margin-left: 50px;
+        margin-right: 107px;
+    }
+    .custom-span1{
+        font-size: 30px;
+
+    }
+    .custom-span2{
+        display: none;
+    }
+}
+
+
+

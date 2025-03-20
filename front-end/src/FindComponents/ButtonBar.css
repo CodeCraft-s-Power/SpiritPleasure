@@ -1,0 +1,77 @@
+/*ButtonBar.css */
+.slider1 {
+    margin-top: 8px;
+    margin-right: 450px;
+    position: relative;
+    display: inline-block;
+    width: 55px;
+    height: 30px;
+}
+
+.slider1 input[type="checkbox"] {
+    display: none;
+}
+
+.slider-toggle1 {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:  rgba(49, 36, 30, 1);
+;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 26px;
+}
+
+.slider-toggle1:before {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 25px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input[type="checkbox"]:checked + .slider-toggle1 {
+    background-color:  rgba(209, 200, 193, 1);
+;
+}
+
+input[type="checkbox"]:checked + .slider-toggle1:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+}
+
+
+.slider-butt {
+    display: flex;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+}
+
+
+ .slider-butt{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.exit-butt-butt{
+    width: 43px;
+    height: 43px;
+    background-image: url("../img/login.svg");
+    background-color: transparent;
+    border: none;
+}

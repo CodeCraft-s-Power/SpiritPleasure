@@ -1,0 +1,44 @@
+[
+    {
+        "model": "place.address",
+        "pk": 1,
+        "fields": {
+            "street": "Вулиця Шевченка 1",
+            "city": "Львів",
+            "region": "Львівська область",
+            "postalcode": "79000"
+        }
+    },
+    {
+        "model": "place.place",
+        "pk": 1,
+        "fields": {
+            "name": "Львівський замок",
+            "description": "Львівський замок – одна з головних туристичних пам'яток Львова.",
+            "slug": "lviv-castle",
+            "longitude": 24.0343943433853,
+            "latitude": 49.84799995,
+            "relaxation_type": ["MOUNTAIN", "HISTORICAL"],
+            "trip_goal": ["ENJOY_NATURE", "VISIT_MUSEUMS_CASTLES"],
+            "with_food": true,
+            "with_sleep": true
+        }
+    },
+    {
+        "model": "place.image",
+        "pk": 1,
+        "fields": {
+            "image": "place_images/lviv_castle.jpg",
+            "place": 1
+        }
+    },
+    {
+        "model": "place.history",
+        "pk": 1,
+        "fields": {
+            "user": 1,
+            "place": 1,
+            "is_favorite": true
+        }
+    }
+]

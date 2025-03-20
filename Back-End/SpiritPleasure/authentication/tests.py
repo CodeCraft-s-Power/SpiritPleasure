@@ -1,39 +1,44 @@
-# tests.py
-
-from django.test import TestCase, Client
-from django.urls import reverse
-from .models import CustomUser
-import json
+from django.contrib.auth.models import User
+from rest_framework.test import APITestCase
+from rest_framework import status
 
 
-class UserIntegrationTest(TestCase):
-    def setUp(self):
-        self.client = Client()
-
-    def test_create_user(self):
-        # Перевірка створення користувача
-        create_user_url = reverse('create_user')
+class AuthenticationTests(APITestCase):
+    def test_login(self):
         user_data = {
             'username': 'testuser',
             'email': 'test@example.com',
             'password': 'testpassword'
         }
-        response = self.client.post(create_user_url, json.dumps(user_data), content_type='application/json')
-        self.assertEqual(response.status_code, 201)
+        User.objects.create_user(**user_data)
 
-        # Перевірка, що користувач існує в базі даних
-        self.assertTrue(CustomUser.objects.filter(username='testuser').exists())
+        response = self.client.post('/login/', data=user_data)
 
-    def test_get_user(self):
-        # Створюємо тестового користувача
-        user = CustomUser.objects.create_user(username='testuser', email='test@example.com', password='testpassword')
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertTrue('token' in response.data)
 
-        # Перевірка отримання інформації про користувача
-        get_user_url = reverse('get_user', args=[user.id])
-        response = self.client.get(get_user_url)
-        self.assertEqual(response.status_code, 200)
+    def test_register(self):
+        new_user_data = {
+            'username': 'newuser',
+            'email': 'newuser@example.com',
+            'password': 'newpassword'
+        }
+        response = self.client.post('/register/', data=new_user_data)
 
-        # Перевірка, що отримана інформація відповідає даним користувача
-        response_data = response.json()
-        self.assertEqual(response_data['username'], 'testuser')
-        self.assertEqual(response_data['email'], 'test@example.com')
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+        self.assertTrue('success' in response.data)
+
+    def test_logout(self):
+        user_data = {
+            'username': 'testuser',
+            'email': 'test@example.com',
+            'password': 'testpassword'
+        }
+        user = User.objects.create_user(**user_data)
+
+        self.client.force_authenticate(user=user)
+
+        response = self.client.get('/logout/')
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertTrue('success' in response.data)

@@ -1,7 +1,21 @@
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from place.views import PlaceViewSet, HistoryViewSet, ImageViewSet, AddressViewSet
+
+
+router = DefaultRouter()
+router.register(r'places', PlaceViewSet)
+router.register(r'history', HistoryViewSet)
+router.register(r'images', ImageViewSet)
+router.register(r'addresses', AddressViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('authentication.urls')),
-]
+    path('', include('django.contrib.auth.urls')),
+    path('', include(router.urls)),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+

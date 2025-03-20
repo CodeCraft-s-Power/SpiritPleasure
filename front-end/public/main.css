@@ -1,0 +1,14 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../src/img/background2.png');
+    background-size: cover; /* Змінено з 'auto' на 'cover', щоб зображення розтягувалося на всю область */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: background-color 0.5s; /* Додано плавну анімацію для зміни фону */
+}
+
+
